@@ -1,0 +1,21 @@
+// site.scss
+
+// 1. Your custom variables and variable overwrites.
+@import "global.scss";
+
+// ... import all
+
+// 2. Import default variables and available mixins.
+@import "../src/scss/variables-theme.scss";
+@import "../src/scss/mixins-theme.scss";
+
+// 3. Your custom mixin overwrites.
+// @import "theme/accordion-mixins.scss";
+// @import "theme/alert-mixins.scss";
+// @import "theme/align-mixins.scss";
+@import "dashboard.scss";
+@import "custom.scss";
+// ... import all
+
+// 4. Import UIkit
+@import "../src/scss/uikit-theme.scss";

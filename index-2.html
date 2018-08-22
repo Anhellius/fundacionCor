@@ -11,23 +11,24 @@
 		<meta property="og:type" content="website" />
 		<meta property="og:url" content="https://www.fundacioncor.org.ar" />
 		<meta property="og:image" content="https://www.fundacioncor.org.ar/images/logo.jpg" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<link rel="icon" href="images/favicon.ico">
 		<!-- CSS FILES -->
         <link rel="stylesheet" href="css/site.css" />
 	</head>
 	<body>
 		<div class="uk-offcanvas-content">
-			<div class="uk-position-right">
-				<img class="svg-clipped" src="images/flowers.jpg" alt="Cherry Blossoms.">
-				<svg height="0" width="0">
-		            <defs>
-		                <clipPath id="svgPath">
-		                    <path fill="#FFFFFF" stroke="#000000" stroke-width="1.5794" stroke-miterlimit="10" d="M215,100.3c97.8-32.6,90.5-71.9,336-77.6
-		        c92.4-2.1,98.1,81.6,121.8,116.4c101.7,149.9,53.5,155.9,14.7,178c-96.4,54.9,5.4,269-257,115.1c-57-33.5-203,46.3-263.7,20.1
-		        c-33.5-14.5-132.5-45.5-95-111.1C125.9,246.6,98.6,139.1,215,100.3z"></path>
-		                </clipPath>
-		            </defs>
-		        </svg>
+			<div class="uk-position-cover uk-animation-kenburns uk-animation-reverse uk-transform-origin-center-left">
+				<img data-src="" width="" height="" alt="" uk-img src="" alt="demo-clip-css" class="element"> <!-- images/slide1.jpg -->
+
+<svg width="0" height="0">
+<!--   <defs>
+	<clipPath id="clip-shape" clipPathUnits="objectBoundingBox">
+	  <polygon points="0.4 0.8, 0.7 0, 1 0, 1 1" />
+	</clipPath>
+  </defs> -->
+</svg>	
+
 <!-- 
 
 				<img class="svg-clipped" src="images/flowers.jpg" alt="Cherry Blossoms.">
@@ -41,6 +42,11 @@
 	            </defs>
 	        	</svg> -->
         	</div>
+<!--         	<div class="uk-position-cover">
+        	<img data-src="" width="" height="" alt="" uk-img src="" alt="demo-clip-css" class="element-2">
+        	<svg width="0" height="0">
+			</svg>	
+			</div>	 -->
 			<!--HEADER-->
 			<header id="header" style="background-color: #fff;" uk-sticky="show-on-up: true; animation: uk-animation-fade; media: @l">
 				<div class="uk-container uk-container-expand">
@@ -114,22 +120,55 @@
 			</div> -->
 			<!-- /NAVIGATION -->
 			<!-- HERO -->
-			<section class="uk-section uk-section-small">
-				<div class="uk-container uk-container-expand">
-					<div class="uk-margin-small-left" uk-grid>
-					<div class="uk-width-1-2@l uk-height-large uk-cover-container uk-border-rounded">
-						<img src="images/imagen-1.jpg" alt="Alt img" uk-cover>
-						<div class="uk-overlay uk-overlay-primary uk-position-cover uk-flex uk-flex-center uk-flex-middle uk-light uk-text-center">
+			<section class="uk-section uk-section-small"  uk-height-viewport="expand: true">
+				<div class="uk-container uk-container-expand height-100vh">
+					<div class="uk-margin-small-left uk-flex uk-flex-column" uk-grid>
+					<div class="uk-width-1-2@l  uk-text-center">
+						<span style="letter-spacing: 0.2em;">BIENVENIDOS</span>
+								<h1 class="uk-margin-top uk-heading-hero">Fundación Cor</h1>
+								<p>Nosotros podemos ahora para que ellos puedan mañana</p>
+								<a href="#" class="uk-button uk-button-default uk-margin-top">DONAR</a>
+						<!-- <img src="images/imagen-1.jpg" alt="Alt img" uk-cover> -->
+<!-- 						<div class="uk-overlay uk-overlay-primary uk-position-cover uk-flex uk-flex-center uk-flex-middle uk-light uk-text-center">
 							<div uk-scrollspy="cls: uk-animation-slide-bottom-small">
 								<span style="letter-spacing: 0.2em; font-size: 0.725rem">BIENVENIDOS</span>
 								<h1 class="uk-margin-top uk-margin-small-bottom uk-margin-remove-adjacent">Fundación Cor</h1>
 								<p>Nosotros podemos ahora para que ellos puedan mañana</p>
 								<a href="#" class="uk-button uk-button-default uk-margin-top">DONAR</a>
 							</div>
-						</div>
+						</div> -->
 						
 					</div>
 					<div class="uk-width-1-2@l ">
+						<div class="uk-card uk-card-default uk-card-body">
+						   
+							<article class="uk-article">
+
+							    <h1 class="uk-article-title"><a class="uk-link-reset" href="">Heading</a></h1>
+
+							    <p class="uk-article-meta">Written by <a href="#">Super User</a> on 12 April 2012. Posted in <a href="#">Blog</a></p>
+
+							    <p class="uk-text-lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+
+							    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+							    <div class="uk-grid-small uk-child-width-auto" uk-grid>
+							        <div>
+							            <a class="uk-button uk-button-text" href="#">Read more</a>
+							        </div>
+							        <div>
+							            <a class="uk-button uk-button-text" href="#">5 Comments</a>
+							        </div>
+							    </div>
+
+							</article>
+
+
+
+
+
+
+						</div>
 <!-- 							<h4 class="uk-heading-line uk-text-bold"><span>Archive</span></h4>
 						<ul class="uk-list">
 							<li><a href="">March</a></li>

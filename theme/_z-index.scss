@@ -1,0 +1,27 @@
+@function z($name) {
+    @if index($z-indexes, $name) {
+        @return (length($z-indexes) - index($z-indexes, $name)) + 1;
+    } @else {
+        @warn 'There is no item "#{$name}" in this list; choose one of: #{$z-indexes}';
+        @return null;
+    }
+}
+$z-indexes: (
+	"header",
+	"contenido",
+	"footer",
+
+);
+
+.z-contenido {
+    z-index: z('contenido');
+}
+.layer {
+    z-index: z('layer');
+}
+header{
+	z-index: z('header');
+}
+.z-footer {
+    z-index: z('footer');
+}

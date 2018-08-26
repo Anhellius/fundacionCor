@@ -3,12 +3,12 @@
 <html class="no-js" lang="en">
 <head>
     <meta charset="utf-8">
-    <meta name="description" content="Revista de Birra El Cervecero">
-    <meta name="keywords" content="cerveza,birra,revista,digital,bar,pub,cerveza rubia,cerveza negra,stout,lagger">
+    <meta name="description" content="Revista de cor El Cervecero">
+    <meta name="keywords" content="cerveza,cor,revista,digital,bar,pub,cerveza rubia,cerveza negra,stout,lagger">
     <meta name="author" content="Alpargata">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Birra</title>
+    <title>cor</title>
     <link rel="stylesheet" href="pages/web/css/app.css">
 </head>
 <body>
@@ -16,13 +16,13 @@
 <!--INICIO DE TOPBAR-->
 <div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
     <button class="menu-icon" type="button" data-toggle="example-menu"></button>
-    <div class="title-bar-title"><img src="pages/web/img/birra3.jpg" style="width: 90px" alt=""></div>
+    <div class="title-bar-title"><img src="pages/web/img/cor3.jpg" style="width: 90px" alt=""></div>
 </div>
 
 <div class="top-bar topbar-center-logo" id="example-menu">
     <div class="top-bar-left">
         <ul class="dropdown menu align-middle z-index-2" data-dropdown-menu>
-            <li class="menu-text padding-0"><a class="padding-0" href="./"><img src="img/birra3.jpg" style="width: 90px" alt=""></a></li>
+            <li class="menu-text padding-0"><a class="padding-0" href="./"><img src="img/cor3.jpg" style="width: 90px" alt=""></a></li>
             <li>
                 <a href="#">Categorías</a>
                 <ul class="menu vertical">

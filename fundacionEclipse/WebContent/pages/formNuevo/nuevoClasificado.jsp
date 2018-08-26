@@ -2,7 +2,7 @@
 	<div class="title bg-color5 panel txt-white">
 		<h3>Nuevo Clasificado</h3>
 	</div>
-  	<stripes:form beanclass="birra.controlador.actionBeans.PanelActionBean" partial="true" >
+  	<stripes:form beanclass="cor.controlador.actionBeans.PanelActionBean" partial="true" >
 	  	<div class="row expanded">
 	 		<div class="small-12 columns">	  		
 		  		<div class="row expanded vHeight" >
@@ -15,7 +15,7 @@
 						<label>Categoría</label>
 						 <stripes:select name="clasificado.categorialistado.idCategoriaListado" id="idCategoriaListado" class="required">                            
 							<stripes:option value="">Seleccione</stripes:option>
-							<stripes:options-collection collection="${combo:getCombo(\"birra.modelo.dominio.CategoriaListado\",\"descripcion\")}"
+							<stripes:options-collection collection="${combo:getCombo(\"cor.modelo.dominio.CategoriaListado\",\"descripcion\")}"
 							value="idCategoriaListado" label="descripcion" />                        
 						</stripes:select>						
 					</div>

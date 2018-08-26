@@ -1,502 +1,342 @@
 <%@ include file="/pages/taglibs.jsp" %>
-<!doctype html>
-<html class="no-js" lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Birra</title>
-    <link rel="stylesheet" href="pages/web/css/app.css">
-  </head>
-  <body>
-<div class="">
-  <!--INICIO DE TOPBAR-->
-  <div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
-    <button class="menu-icon" type="button" data-toggle="example-menu"></button>
-    <div class="title-bar-title"><img src="pages/web/img/birra3.jpg" style="width: 90px" alt=""></div>
-  </div>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="Fundación din fines de lucro para donaciones">
+		<meta name="keywords" content="Fundación,donar,niÃ±os,beneficencia">
+		<meta name="author" content="Fundación Cor">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Fundación Cor</title>
+		<meta property="og:title" content="Fundación Cor" />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://www.fundacioncor.org.ar/images/" />
+		<meta property="og:image" content="https://www.fundacioncor.org.ar/images/logo.jpg" />
+		<link rel="icon" href="images/favicon.ico">
+		<!-- CSS FILES -->
+        <link rel="stylesheet" href="pages/web/css/site.css" />
+	</head>
+	<body>
+		<div class="uk-offcanvas-content">
+			<!--HEADER-->
+			<header id="header" style="background-color: #fff;" uk-sticky="show-on-up: true; animation: uk-animation-fade; media: @l">
+				<div class="uk-container uk-container-expand">
+					<nav class="uk-margin-top uk-margin-small-bottom" id="navbar" uk-navbar="mode: click;">
+						<div class="uk-navbar-left nav-overlay uk-visible@m">
+							<ul class="uk-navbar-nav">
+								<li>
+									<a href="#" title="Subscribe">Donar</a>
+								</li>
+								<li>
+									<a href="login.html" title="Sign Up">Login</a>
+								</li>
+							</ul>
+						</div>
+						<div class="uk-navbar-center nav-overlay">
+							<a class="uk-navbar-item uk-logo" href="/inicio" title="Logo"><img src="pages/images/logo-2.jpeg" alt="Logo" style="height: 88px"></a>
+						</div>
+						<div class="uk-navbar-right nav-overlay">
+							<a class="uk-navbar-toggle uk-visible@m" uk-search-icon uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href="#"></a>
+							<div class="uk-navbar-item">
+								<a class="uk-visible@s" style="margin-right: 4px" href="#" uk-icon="facebook"></a>
+								<!-- <a class="uk-visible@s" style="margin-right: 4px" href="#" uk-icon="twitter"></a>
+								<a class="uk-visible@s" style="margin-right: 4px" href="#" uk-icon="instagram"></a> -->
+								<a class="uk-navbar-toggle uk-hidden@m" uk-toggle uk-navbar-toggle-icon href="#offcanvas-nav"></a>
+							</div>
+							
+						</div>
+						<div class="nav-overlay uk-navbar-left uk-flex-1" hidden>
+							<div class="uk-navbar-item uk-width-expand">
+								<form class="uk-search uk-search-navbar uk-width-1-1">
+									<input class="uk-search-input" type="search" placeholder="Buscar...">
+								</form>
+							</div>
+							<a class="uk-navbar-toggle" uk-close uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href="#"></a>
+						</div>
+					</nav>
+				</div>
+			</header>
+			<!--/HEADER-->
+			<!-- NAVIGATION -->
+			<div class="uk-container uk-container-expand">
+				<nav class="nav-scroll">
+					<ul class="uk-subnav uk-flex uk-flex-between uk-flex-nowrap" uk-margin>
+						<li class="uk-active"><a href="index.html">Inicio</a></li>
+						<li><a href="#">Mision</a></li>
+						<li><a href="#">Objetivos</a></li>
+						<li><a href="#">Actividades</a></li>
+						<li><a href="#">Donaciones</a></li>
+						<li><a href="articulos">Articulos</a></li>
+						<li><a href="#">Contacto</a></li>
+					</ul>
+				</nav>
+			</div>
+			<!-- /NAVIGATION -->
+			<!-- HERO -->
+			<section class="uk-section uk-section-small">
+				<div class="uk-container uk-container-expand">
+					<div class="uk-margin-small-left" uk-grid>
+					<div class="uk-width-2-3@l uk-height-large uk-cover-container uk-border-rounded">
+						<img src="pages/images/imagen-1.jpg" alt="Alt img" uk-cover>
+						<div class="uk-overlay uk-overlay-primary uk-position-cover uk-flex uk-flex-center uk-flex-middle uk-light uk-text-center">
+							<div uk-scrollspy="cls: uk-animation-slide-bottom-small">
+								<span style="letter-spacing: 0.2em; font-size: 0.725rem">BIENVENIDOS</span>
+								<h1 class="uk-margin-top uk-margin-small-bottom uk-margin-remove-adjacent">Fundación Cor</h1>
+								<p>Nosotros podemos ahora para que ellos puedan mañana</p>
+								<a href="#" class="uk-button uk-button-default uk-margin-top">DONAR</a>
+							</div>
+						</div>
+						
+					</div>
+					<div class="uk-width-1-3@l ">
+<!-- 							<h4 class="uk-heading-line uk-text-bold"><span>Archive</span></h4>
+						<ul class="uk-list">
+							<li><a href="">March</a></li>
+							<li><a href="">February</a></li>
+							<li><a href="">January</a></li>
+							<li><a href="">December <small>(2017)</small></a></li>
+							<li><a href="">November <small>(2017)</small></a></li>
+							<li><a href="">October <small>(2017)</small></a></li>
+							<li><a href="">September <small>(2017)</small></a></li>
+							<li><a href="">August <small>(2017)</small></a></li>
+						</ul> -->
+						<h4 class="uk-heading-line uk-text-bold"><span>Sobre Nosotros</span></h4>
+						<div class="uk-tile uk-tile-small uk-tile-muted uk-border-rounded">
 
-  <div class="top-bar topbar-center-logo" id="example-menu">
-    <div class="top-bar-left">
-      <ul class="dropdown menu align-middle z-index-2" data-dropdown-menu>
-        <li class="menu-text padding-0"><a class="padding-0" href="./"><img src="img/birra3.jpg" style="width: 90px" alt=""></a></li>
-        <li>
-          <a href="#">Categorías</a>
-          <ul class="menu vertical">
-            <c:forEach items="${actionBean.categoriasNoticias}" var="p" varStatus="i">
-              <li><a href="categoria?id=${p.idCategoriaNoticia}">${p.descripcion}</a></li>
-            </c:forEach>
-          </ul>
-        </li>
-        <li><a href="#">Contacto</a></li>
-        <li><a href="#"><i class="fa fa-twitter text-twitter" aria-hidden="true"></i></a></li>
-        <li><a href="#"><i class="fa fa-facebook text-facebook" aria-hidden="true"></i></a></li>
-        <li><a href="#"><i class="fa fa-google-plus text-google" aria-hidden="true"></i></a></li>
-      </ul>
+							Ayudamos a lograr que todos los niÃ±os/as y adolscentes puedan vivir en familia. <br>
+							Quienes conformamos Fundación Cor: Consejo de administración voluntarios de distintas Ã¡reas, llevamos adelante diferentes programas destinados a brindar una mejor calidad de vida, mejor proyección a futuro; enfocados a quellos niÃ±os/as y adolescentes que por distintas circunstancias no tienen posibilidad de que sus derechos sean respetados. <br>
+							Sabemos que trabajando codo a codo por ellos, con objetivos claros, podemos ayudar a concretar estos sueÃ±os. Te necesitamos. <br>
 
-    </div>
-    <div class="top-bar-right searchbar">
-      <ul class="menu material-forms ">
-        <li><input class="is-hidden" type="search" placeholder="Buscar" data-toggler="is-hidden" id="buscador"  autofocus="autofocus"></li>
-        <li><button type="button" class="button rounded hollow" data-toggle="buscador"><i class="fa fa-search" aria-hidden="true"></i></button></li>
-      </ul>
-    </div>
-  </div>
-  <!--FIN DE TOPBAR-->
+							<p>Â¡VOS Y YO SOMOS NOSOTROS!</p> 
 
+							<p><span class="uk-text-primary">Silvia Valerio de Martinez</span> <br>
+							<strong>Presidente Fundación Cor</strong></p>
+						</div>
+					</div>
+				</div>
+				</div>
+			</section>
+			
+			<!-- HERO -->
+			<!-- FEATURED -->
+			<!-- <div class="uk-container">
+				<h4 class="uk-heading-line uk-text-bold"><span>Featured</span></h4>
+				<div uk-slider="velocity: 5">
+					<div class="uk-position-relative">
+						<div class="uk-slider-container">
+							<ul class="uk-slider-items uk-child-width-1-2@m uk-grid uk-grid-medium news-slide">
+								<li>
+									<div class="uk-card uk-card-default uk-card-body uk-card-small uk-flex uk-flex-middle uk-card-default uk-border-rounded">
+										<div class="uk-grid uk-grid-medium uk-flex uk-flex-middle" uk-grid>
+											<div class="uk-width-1-3@s uk-width-2-5@m uk-height-1-1">
+												<img src="https://picsum.photos/500/500/?random=1" alt="">
+											</div>
+											<div class="uk-width-2-3@s uk-width-3-5@m">
+												<span class="uk-label uk-label-warning" style="font-size: 0.75rem">Trends</span>
+												<h3 class="uk-card-title uk-margin-small-top uk-margin-remove-bottom">
+													<a class="uk-link-reset" href="#">Short Blog Title</a>
+												</h3>
+												<span class="uk-article-meta">Published 12th August 2018</span>
+												<p class="uk-margin-small">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do...</p>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="uk-card uk-card-default uk-card-body uk-card-small uk-flex uk-flex-middle uk-card-default uk-border-rounded">
+										<div class="uk-grid uk-grid-medium uk-flex uk-flex-middle" uk-grid>
+											<div class="uk-width-1-3@s uk-width-2-5@m uk-height-1-1">
+												<img src="https://picsum.photos/500/500/?random=2" alt="">
+											</div>
+											<div class="uk-width-2-3@s uk-width-3-5@m">
+												<span class="uk-label uk-label-warning" style="font-size: 0.75rem">Trends</span>
+												<h3 class="uk-card-title uk-margin-small-top uk-margin-remove-bottom">
+													<a class="uk-link-reset" href="#">Short Blog Title</a>
+												</h3>
+												<span class="uk-article-meta">Published 12th August 2018</span>
+												<p class="uk-margin-small">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do...</p>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="uk-card uk-card-default uk-card-body uk-card-small uk-flex uk-flex-middle uk-card-default uk-border-rounded">
+										<div class="uk-grid uk-grid-medium uk-flex uk-flex-middle" uk-grid>
+											<div class="uk-width-1-3@s uk-width-2-5@m uk-height-1-1">
+												<img src="https://picsum.photos/500/500/?random=3" alt="">
+											</div>
+											<div class="uk-width-2-3@s uk-width-3-5@m">
+												<span class="uk-label uk-label-warning" style="font-size: 0.75rem">Trends</span>
+												<h3 class="uk-card-title uk-margin-small-top uk-margin-remove-bottom">
+													<a class="uk-link-reset" href="#">Short Blog Title</a>
+												</h3>
+												<span class="uk-article-meta">Published 12th August 2018</span>
+												<p class="uk-margin-small">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do...</p>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="uk-card uk-card-default uk-card-body uk-card-small uk-flex uk-flex-middle uk-card-default uk-border-rounded">
+										<div class="uk-grid uk-grid-medium uk-flex uk-flex-middle" uk-grid>
+											<div class="uk-width-1-3@s uk-width-2-5@m uk-height-1-1">
+												<img src="https://picsum.photos/500/500/?random=4" alt="">
+											</div>
+											<div class="uk-width-2-3@s uk-width-3-5@m">
+												<span class="uk-label uk-label-warning" style="font-size: 0.75rem">Trends</span>
+												<h3 class="uk-card-title uk-margin-small-top uk-margin-remove-bottom">
+													<a class="uk-link-reset" href="#">Short Blog Title</a>
+												</h3>
+												<span class="uk-article-meta">Published 12th August 2018</span>
+												<p class="uk-margin-small">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do...</p>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="uk-hidden@l uk-light">
+							<a class="uk-position-center-left uk-position-small" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+							<a class="uk-position-center-right uk-position-small" href="#" uk-slidenav-next uk-slider-item="next"></a>
+						</div>
+						<div class="uk-visible@l">
+							<a class="uk-position-center-left-out uk-position-small" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+							<a class="uk-position-center-right-out uk-position-small" href="#" uk-slidenav-next uk-slider-item="next"></a>
+						</div>
+					</div>
+					<ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+				</div>
+			</div> -->
+			<!-- /FEATURED -->
+			<!--CONTENT-->
+			<div class="uk-section uk-section-default">
+				<div class="uk-container uk-container-expand">
+					<h4 class="uk-heading-line uk-text-bold"><span>Ãšltimas Noticias</span></h4>	
+					<div class="uk-grid uk-child-width-1-3" ukgrid>
+						<div>
+							<article class="uk-section uk-section-small uk-padding-remove-top">
+								<header>
+									<h2 class="uk-margin-remove-adjacent uk-text-bold uk-margin-small-bottom"><a title="Fusce facilisis tempus magna ac dignissim." class="uk-link-reset" href="noticia.html">Ejemplo de tÃ­tulo largo para ver como queda</a></h2>
+									<p class="uk-article-meta">Escrito el 23 de Marzo de 2018. Por <a href="#">Fundación Cor</a><!-- |  <span uk-icon="icon: future"></span> Takes 7 min reading. --></p>
+								</header>
+								<figure>
+									<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAEsCAYAAAA7Ldc6AAADuUlEQVR4nO3BgQAAAADDoPlTX+AIVQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMA3p/4AAaxRls8AAAAASUVORK5CYII=" data-src="https://picsum.photos/1200/300/?random=1" width="1200" height="300"  alt="Alt text" class="lazy" data-uk-img>
+									<figcaption class="uk-padding-small uk-text-center uk-text-muted">EpÃ­grafe de la imagen</figcaption>
+								</figure>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, delectus, necessitatibus. Dignissimos voluptatum necessitatibus accusamus quo culpa? Officiis eos, vitae quae, deleniti, saepe, doloribus ipsum corporis sit consequatur reprehenderit quas.</p>
+								<p>Ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+								<a href="noticia.html" title="Seguir leyendo" class="uk-button uk-button-default uk-button-small">Seguir leyendo</a>
+								<hr>
+							</article>
+						</div>
+						<div>
+							<article class="uk-section uk-section-small uk-padding-remove-top">
+								<header>
+									<h2 class="uk-margin-remove-adjacent uk-text-bold uk-margin-small-bottom"><a title="Ultricies eget, tempor sit amet, ante" class="uk-link-reset" href="noticia.html">Otro tÃ­tulo largo para ver como quedarÃ­a en dos lÃ­neas por ejemplo</a></h2>
+									<p class="uk-article-meta">Escrito el 12 de frebrero de 2018. Por <a href="noticia.html">Fundación Cor</a><!-- |  <span uk-icon="icon: future"></span> Takes 7 min reading. --></p>
+								</header>
+								<figure>
+									<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAEsCAYAAAA7Ldc6AAADuUlEQVR4nO3BgQAAAADDoPlTX+AIVQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMA3p/4AAaxRls8AAAAASUVORK5CYII=" data-src="https://picsum.photos/1200/300/?random=2" width="1200" height="300" alt="Alt text" class="lazy" data-uk-img>
+									<figcaption class="uk-padding-small uk-text-center uk-text-muted">EpÃ­grafe de la imagen</figcaption>
+								</figure>
+								
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, nesciunt deserunt alias odit suscipit quo. Non impedit nesciunt excepturi accusamus, fuga officiis incidunt consequatur soluta hic iusto, reiciendis perspiciatis repudiandae?</p>
+								<p>Ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+								<a href="noticia.html" title="Seguir leyendo" class="uk-button uk-button-default uk-button-small">Seguir leyendo</a>
+								<hr>
+							</article>
+							</div>
+							<div>
+							<article class="uk-section uk-section-small uk-padding-remove-top">
+								<header>
+									<h2 class="uk-margin-remove-adjacent uk-text-bold uk-margin-small-bottom"><a title="Donec eu libero sit amet quam egestas semper" class="uk-link-reset" href="noticia.html">Donec eu libero sit amet quam egestas semper</a></h2>
+									<p class="uk-article-meta">Escrito el 5 de enero de 2018. Por <a href="noticia.html">Fundación Cor</a><!-- |  <span uk-icon="icon: future"></span> Takes 7 min reading. --></p>
+								</header>
+								<figure>
+									<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAEsCAYAAAA7Ldc6AAADuUlEQVR4nO3BgQAAAADDoPlTX+AIVQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMA3p/4AAaxRls8AAAAASUVORK5CYII=" data-src="https://picsum.photos/1200/300/?random=3" width="1200" height="300" alt="Alt text" class="lazy" data-uk-img>
+									<figcaption class="uk-padding-small uk-text-center uk-text-muted">EpÃ­grafe de la imagen</figcaption>
+								</figure>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci minima, officia laudantium, placeat in sed velit, non fuga vero ullam pariatur cumque voluptates error obcaecati. Pariatur, adipisci, consequuntur. Eos, odit!</p>
+								<p>Ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+								<a href="noticia.html" title="Seguir leyendo" class="uk-button uk-button-default uk-button-small">Seguir leyendo</a>
+							</article>
+							</div>
+							
+						
+						<div class="uk-width-1-3@m">
+<!-- 							<h4 class="uk-heading-line uk-text-bold"><span>Archive</span></h4>
+							<ul class="uk-list">
+								<li><a href="">March</a></li>
+								<li><a href="">February</a></li>
+								<li><a href="">January</a></li>
+								<li><a href="">December <small>(2017)</small></a></li>
+								<li><a href="">November <small>(2017)</small></a></li>
+								<li><a href="">October <small>(2017)</small></a></li>
+								<li><a href="">September <small>(2017)</small></a></li>
+								<li><a href="">August <small>(2017)</small></a></li>
+							</ul> -->
+							<!-- <h4 class="uk-heading-line uk-text-bold"><span>Sobre Nosotros</span></h4>
+							<div class="uk-tile uk-tile-small uk-tile-muted uk-border-rounded">
 
-      <div class="grid-x grid-padding-x grid-padding-y">
-        <div class="large-8 cell">
-          <div class="orbit clean-hero-slider" role="region" aria-label="Favorite Space Pictures" data-orbit>
-            <div class="orbit-wrapper">
-              <div class="orbit-controls">
-                <!--<button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>-->
-                <!--<button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>-->
-              </div>
-              <ul class="orbit-container">
-                <li class="orbit-slide">
-                  <figure class="orbit-figure">
-                    <div class="position-absolute z-index-1"><span class="label  size-36 roboto-thin deep-orange darken-4  deep-orange-text text-accent-1">EL NEGOCIO</span></div>
-                    <img class="cropcontainer" src="pages/imagenesCargadas/${actionBean.noticiasElNegocio[0].nombreImagenPrincipal}" alt="image alt text">
-                    <figcaption class="orbit-caption">
-                      <h3 class="robotoMono-light">${actionBean.noticiasElNegocio[0].titulo}</h3>
-                      <p class="roboto-light">${actionBean.noticiasElNegocio[0].copete}</p>
-                      <div class="grid-x">
-                        <div class="cell small-12 large-shrink"><a href="noticia?id=${actionBean.noticiasElNegocio[0].idNoticia}" class="button rounded expanded deep-orange darken-1">${actionBean.noticiasElNegocio[0].autor}</a></div>
-                      </div>
+								Ayudamos a lograr que todos los niÃ±os/as y adolscentes puedan vivir en familia. <br>
+								Quienes conformamos Fundación Cor: Consejo de administración voluntarios de distintas Ã¡reas, llevamos adelante diferentes programas destinados a brindar una mejor calidad de vida, mejor proyección a futuro; enfocados a quellos niÃ±os/as y adolescentes que por distintas circunstancias no tienen posibilidad de que sus derechos sean respetados. <br>
+								Sabemos que trabajando codo a codo por ellos, con objetivos claros, podemos ayudar a concretar estos sueÃ±os. Te necesitamos. <br>
 
-                    </figcaption>
-                  </figure>
-                </li>
-              </ul>
-            </div>
-            <!--<nav class="orbit-bullets">-->
-              <!--<button class="is-active" data-slide="1"><span class="show-for-sr">Lorem Ipsum Etiam</span></button>-->
-              <!--<button data-slide="2"><span class="show-for-sr">Lorem Ipsum Etiam</span></button>-->
-              <!--<button data-slide="3"><span class="show-for-sr">Lorem Ipsum Etiam</span></button>-->
-            <!--</nav>-->
+								<p>Â¡VOS Y YO SOMOS NOSOTROS!</p> 
 
-          </div>
-
-
-        </div>
-        <div class="large-4 cell">
-          <div class="orbit clean-hero-slider" role="region" aria-label="Favorite Space Pictures" data-orbit>
-            <div class="orbit-wrapper">
-              <div class="orbit-controls">
-                <button class="orbit-previous deep-orange darken-2"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
-                <button class="orbit-next deep-orange darken-2"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
-              </div>
-              <ul class="orbit-container">
-                <div class="position-absolute z-index-1"><span class="label size-36 roboto-thin deep-orange darken-4  deep-orange-text text-accent-1">ACTUALIDAD</span></div>
-                
-                <c:forEach items="${actionBean.noticiasActualidad}" var="p" varStatus="i">
-	                <li class="orbit-slide">
-	                  <figure class="orbit-figure">
-	                    <img class="cropcontainer" src="pages/imagenesCargadas/${p.nombreImagenPrincipal}" alt="image alt text">
-	                    <figcaption class="orbit-caption">
-	                      <h3 class="h4  robotoMono-light">${p.titulo}</h3>
-	                      <p class="roboto-light">${p.copete}</p>
-	                      <a href="noticia2.html" class="button rounded  deep-orange darken-1">${p.autor}</a>
-	                    </figcaption>
-	                  </figure>
-	                </li>
-                </c:forEach>
-                
-              </ul>
-            </div>
-            <nav class="orbit-bullets">
-              <button class="is-active" data-slide="0"><span class="show-for-sr">Lorem Ipsum Etiam</span></button>
-              <button data-slide="1"><span class="show-for-sr">Lorem Ipsum Etiam</span></button>
-              <button data-slide="2"><span class="show-for-sr">Lorem Ipsum Etiam</span></button>
-            </nav>
-          </div>
-
-
-        </div>
-      </div>
-</div>
-
-
-      <div class="grid-x grid-padding-x grid-padding-y">
-        <!--SPONSORS-->
-        <div class="cell small-12 large-4">
-          <h4 class="separator-left">SPONSORS</h4>
-          <div class="contain position-relative">
-            <div id="arrowL" class="orbit-previous"><span class="show-for-sr">Anterior</span><i class="fa fa-angle-left fa-3x" aria-hidden="true"></i></div>
-            <div id="arrowR" class="orbit-next"><span class="show-for-sr">Siguiente</span><i class="fa fa-angle-right fa-3x" aria-hidden="true"></i></div>
-            <div class="row" id="content">
-              <div class="row__inner">
-
-				<c:forEach items="${actionBean.sponsors}" var="p" varStatus="i">
-
-	                <div class="tile shadow margin-bottom-1" data-open="exampleModal1">
-	                    <div class="card-user-profile">
-	                      <div class="responsive-embed widescreen">
-	                        <img class="card-user-profile-img" src="pages/imagenesCargadas/${p.imagenFondo}"/>
-	                      </div>
-	                      <div class="card-user-profile-content card-section text-center">
-	                        <div class="card-user-profile-avatar">
-	                          <img src="pages/imagenesCargadas/${p.imagenLogo}"/>
-	                        </div>
-	                        <p class="">${p.nombre} <br> <small>${p.breveDescripcion}</small></p>
-	                      </div>
-	                    </div>
-	                </div> 
-                
-                </c:forEach>
-                               
-
-              </div>
-            </div>
-
-          </div>
-        </div>
-        <!--FIN SPONSORS-->
-
-        <!--CLASIFICADOS-->
-        <div class="cell small-12 large-8">
-          <h4 class="separator-left">CLASIFICADOS</h4>
-          <div class="grid-x grid-margin-x">
-            <!--donde ir-->
-            <div class="cell large-auto">
-            	  
-	              <h5 class=" roboto-light">
-	               	<c:forEach items="${actionBean.clasificados}" var="p" varStatus="i">
-	              		<c:if test="${p.categorialistado.idCategoriaListado==3}">
-	              			${p.categorialistado.descripcion}
-	              		</c:if>
-	              	</c:forEach>	
-	              </h5>
-	              
-	              <ul class="no-bullet">
-	              	<c:forEach items="${actionBean.clasificados}" var="p" varStatus="i">
-	              		<c:if test="${p.categorialistado.idCategoriaListado==3}">	
-			                <li class="size-14">
-			                  <a href="">${p.nombre} </a>
-			                  <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
-			                  <a href=""><i class="fa fa-map-marker" aria-hidden="true"></i></a>
-			                </li>
-		               </c:if>
-	                 </c:forEach>
-	              </ul>
-	             
-            </div>
-            <!--fin donde ir-->
-
-            <!--que tomar-->
-            <div class="cell large-auto">
-              <h5 class=" roboto-light">
-	               	<c:forEach items="${actionBean.clasificados}" var="p" varStatus="i">
-	              		<c:if test="${p.categorialistado.idCategoriaListado==4}">
-	              			${p.categorialistado.descripcion}
-	              		</c:if>
-	              	</c:forEach>	
-	              </h5>
-	              
-	              <ul class="no-bullet">
-	              	<c:forEach items="${actionBean.clasificados}" var="p" varStatus="i">
-	              		<c:if test="${p.categorialistado.idCategoriaListado==4}">	
-			                <li class="size-14">
-			                  <a href="">${p.nombre} </a>
-			                  <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
-			                  <a href=""><i class="fa fa-map-marker" aria-hidden="true"></i></a>
-			                </li>
-		               </c:if>
-	                 </c:forEach>
-	              </ul>
-            </div>
-            <!--fin que tomar-->
-
-            <!--insumos-->
-            <div class="cell large-auto">
-             <h5 class=" roboto-light">
-	               	<c:forEach items="${actionBean.clasificados}" var="p" varStatus="i">
-	              		<c:if test="${p.categorialistado.idCategoriaListado==5}">
-	              			${p.categorialistado.descripcion}
-	              		</c:if>
-	              	</c:forEach>	
-	              </h5>
-	              
-	              <ul class="no-bullet">
-	              	<c:forEach items="${actionBean.clasificados}" var="p" varStatus="i">
-	              		<c:if test="${p.categorialistado.idCategoriaListado==5}">	
-			                <li class="size-14">
-			                  <a href="">${p.nombre} </a>
-			                  <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
-			                  <a href=""><i class="fa fa-map-marker" aria-hidden="true"></i></a>
-			                </li>
-		               </c:if>
-	                 </c:forEach>
-	              </ul>
-            </div>
-            <!--fin insumos-->
-
-            <!--alquileres de choperas-->
-            <div class="cell large-auto">
-              <h5 class=" roboto-light">
-	               	<c:forEach items="${actionBean.clasificados}" var="p" varStatus="i">
-	              		<c:if test="${p.categorialistado.idCategoriaListado==6}">
-	              			${p.categorialistado.descripcion}
-	              		</c:if>
-	              	</c:forEach>	
-	              </h5>
-	              
-	              <ul class="no-bullet">
-	              	<c:forEach items="${actionBean.clasificados}" var="p" varStatus="i">
-	              		<c:if test="${p.categorialistado.idCategoriaListado==6}">	
-			                <li class="size-14">
-			                  <a href="">${p.nombre} </a>
-			                  <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
-			                  <a href=""><i class="fa fa-map-marker" aria-hidden="true"></i></a>
-			                </li>
-		               </c:if>
-	                 </c:forEach>
-	              </ul>
-            </div>
-            <!--fin alquileres de choperas-->
-
-          </div>
-
-        </div>
-        <!--FIN CLASIFICADOS-->
-      </div>
-
-      <div class="grid-x grid-padding-x grid-padding-y">
-        <div class="small-12 cell">
-          <div class="grid-x grid-padding-y grid-padding-x">
-            <div class="large-4 medium-4 small-12 cell">
-              <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
-                <div class="orbit-wrapper">
-                  <ul class="orbit-container">
-                    <li class="is-active orbit-slide black">
-                      <figure class="orbit-figure">
-                        <div class="position-absolute z-index-1"><span class="label  size-36 roboto-thin deep-orange darken-4  deep-orange-text text-accent-1">CIENCIA Y TECNO</span></div>
-                        <img class="orbit-image cropcontainer" src="pages/imagenesCargadas/${actionBean.noticiasCT[0].nombreImagenPrincipal}" alt="image alt text">
-                        <figcaption class="orbit-caption">
-                          <h4 class="robotoMono-light">${actionBean.noticiasCT[0].titulo}</h4>
-                          <p>${actionBean.noticiasCT[0].copete}</p>
-                          <a href="#" class="button rounded deep-orange darken-1">${actionBean.noticiasCT[0].autor}</a>
-                        </figcaption>
-                      </figure>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="large-4 medium-4 small-12 cell">
-              <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
-                <div class="orbit-wrapper">
-                  <ul class="orbit-container">
-                    <li class="is-active orbit-slide black">
-                      <figure class="orbit-figure">
-                        <div class="position-absolute z-index-1"><span class="label  size-36 roboto-thin deep-orange darken-4  deep-orange-text text-accent-1">DE GIRA</span></div>
-                        <img class="orbit-image cropcontainer" src="pages/imagenesCargadas/${actionBean.noticiasDegira[0].nombreImagenPrincipal}" alt="image alt text">
-                        <figcaption class="orbit-caption">
-                          <h4 class="robotoMono-light">${actionBean.noticiasDegira[0].titulo}</h4>
-                          <p>${actionBean.noticiasDegira[0].copete}</p>
-                          <a href="#" class="button rounded deep-orange darken-1">${actionBean.noticiasDegira[0].autor}</a>
-                        </figcaption>
-                      </figure>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="large-4 medium-4 small-12 cell">
-              <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
-                <div class="orbit-wrapper">
-                  <ul class="orbit-container">
-                    <li class="is-active orbit-slide black">
-                      <figure class="orbit-figure">
-                        <div class="position-absolute z-index-1"><span class="label  size-36 roboto-thin deep-orange darken-4  deep-orange-text text-accent-1">RSE</span></div>
-                        <img class="orbit-image cropcontainer" src="pages/imagenesCargadas/${actionBean.noticiasRSE[0].nombreImagenPrincipal}" alt="image alt text">
-                        <figcaption class="orbit-caption">
-                          <h4 class="robotoMono-light">${actionBean.noticiasRSE[0].titulo}</h4>
-                          <p>${actionBean.noticiasRSE[0].copete}</p>
-                          <a href="#" class="button rounded deep-orange darken-1">${actionBean.noticiasRSE[0].autor}</a>
-                        </figcaption>
-                      </figure>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="grid-x grid-padding-x grid-padding-y">
-        <div class="small-12 large-8 cell">
-          <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
-            <div class="orbit-wrapper">
-              <ul class="orbit-container">
-                <li class="is-active orbit-slide black">
-                  <figure class="orbit-figure">
-                    <div class="position-absolute z-index-1"><span class="label  size-36 roboto-thin deep-orange darken-4  deep-orange-text text-accent-1">ENTREVISTA</span></div>
-                    <img class="orbit-image cropcontainer" src="pages/imagenesCargadas/${actionBean.noticiasEntrevista[0].nombreImagenPrincipal}" alt="image alt text">
-                    <figcaption class="orbit-caption">
-                      <h4 class="robotoMono-light">${actionBean.noticiasEntrevista[0].titulo}</h4>
-                      <p>${actionBean.noticiasEntrevista[0].copete}</p>
-                      <a href="#" class="button rounded deep-orange darken-1">${actionBean.noticiasEntrevista[0].autor}</a>
-                    </figcaption>
-                  </figure>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="small-12 large-4 cell">
-          <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
-            <div class="orbit-wrapper">
-              <ul class="orbit-container">
-                <li class="is-active orbit-slide black">
-                  <figure class="orbit-figure">
-                    <div class="position-absolute z-index-1"><span class="label  size-36 roboto-thin deep-orange darken-4  deep-orange-text text-accent-1">HISTORIAS DE BIRRA</span></div>
-                    <img class="orbit-image cropcontainer" src="pages/imagenesCargadas/${actionBean.noticiasHistoriasBirra[0].nombreImagenPrincipal}" alt="image alt text">
-                    <figcaption class="orbit-caption">
-                      <h4 class="robotoMono-light">${actionBean.noticiasHistoriasBirra[0].titulo}</h4>
-                      <p>${actionBean.noticiasHistoriasBirra[0].copete}</p>
-                      <a href="#" class="button rounded deep-orange darken-1">${actionBean.noticiasHistoriasBirra[0].autor}</a>
-                    </figcaption>
-                  </figure>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  <footer class="grid-x grid-padding-x grid-padding-y align-justify blue-grey darken-4 white-text">
-
-      <!--oferta academica-->
-      <div class="cell small-12 large-6">
-        <h5 class=" roboto-light">Oferta Académica</h5>
-        <ul class="no-bullet">
-        	<c:forEach items="${actionBean.clasificados}" var="p" varStatus="i">
-		          <c:if test="${p.categorialistado.idCategoriaListado==1}">
-		          <li class="size-14">
-			            <a href="">${p.nombre}</a>
-			            <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
-			            <a href=""><i class="fa fa-map-marker" aria-hidden="true"></i></a>
-			          </li>
-		          </c:if>
-	        </c:forEach>
-         
-        </ul>
-      </div>
-      <!--fin oferta academica-->
-
-      <!--camaras sectoriales-->
-      <div class="cell small-12 large-6">
-        <h5 class=" roboto-light">     	
-          	Camaras Sectoriales        
-        </h5>
-        <ul class="no-bullet">
-        	<c:forEach items="${actionBean.clasificados}" var="p" varStatus="i">
-	          <c:if test="${p.categorialistado.idCategoriaListado==2}">
-		          <li class="size-14">
-		            <a href="">${p.nombre} </a>
-		            <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
-		            <a href=""><i class="fa fa-map-marker" aria-hidden="true"></i></a>
-		          </li>		          
-	          </c:if>
-          	</c:forEach>	
-         
-        </ul>
-      </div>
-      <!--fin camaras sectoriales-->
-
-    <!--<div class="small-12 large-shrink cell">-->
-    <!--<p class="white-text">&copy; 2017 No rights reserved</p>-->
-    <!--</div>-->
-    <!--<div class="small-12 large-shrink cell">-->
-    <!--<ul class="menu ">-->
-    <!--<li><a class="white-text" href="#">Home</a></li>-->
-    <!--<li><a class="white-text" href="#">About</a></li>-->
-    <!--<li><a class="white-text" href="#">Services</a></li>-->
-    <!--<li><a class="white-text" href="#">Works</a></li>-->
-    <!--<li><a class="white-text" href="#">News</a></li>-->
-    <!--<li><a class="white-text" href="#">Contact</a></li>-->
-    <!--</ul>-->
-    <!--</div>-->
-  </footer>
-
-
-  <div class="large reveal padding-0 shadow  border-none" id="exampleModal1" data-reveal>
-    <div class="grid-x">
-      <div class="cell small-12 large-4">
-        <div class="responsive-embed widescreen position-relative">
-          <div class="position-absolute-bottom padding-horizontal-1 bg-black-alpha">
-            <h4 class="white-text">Nombre del Lugar</h4>
-            <p><small class="white-text">Breve Descripcioin - Lugar y/o direcciÃ³n todo lindo </small></p>
-          </div>
-          <img src="img/sponsor/bar-1.jpg" alt="">
-        </div>
-        <div class="card-section">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab, architecto dicta dolore eligendi est excepturi facere illum incidunt itaque magni modi nobis omnis, quasi quidem saepe sit tenetur velit.</p>
-        </div>
-        <div class="card-section">
-          <div class="grid-x grid-margin-x text-center">
-            <div class="cell auto">
-              <i class="fa fa-map-o fa-2x blue-grey-text" aria-hidden="true"></i><br> <small>Google Maps</small>
-            </div>
-            <div class="cell auto">
-              <i class="fa fa-external-link fa-2x blue-grey-text" aria-hidden="true"></i><br> <small>Sitio Web</small>
-            </div>
-            <div class="cell auto">
-              <i class="fa fa-envelope-o fa-2x blue-grey-text" aria-hidden="true"></i> <br> <small>Mail</small>
-            </div>
-            <div class="cell auto">
-              <i class="fa fa-share-alt fa-2x blue-grey-text" aria-hidden="true"></i> <br> <small>Compartir</small>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="cell small-12 large-8">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.046484898263!2d-58.43885558513895!3d-34.628265566303654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca4bd65fdfb1%3A0xfd30a6f021ba6530!2sCervecer%C3%ADa+11.25!5e0!3m2!1ses-419!2sar!4v1507061745695" width="800" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
-      </div>
-    </div>
-  </div>
-
-  <script src="pages/web/js/jquery.min.js"></script>
-  <script src="pages/web/js/what-input.min.js"></script>
-  <script src="pages/web/js/foundation.min.js"></script>
-  <script src="https://use.fontawesome.com/b825156fce.js"></script>
-  <script src="pages/web/js/app.js"></script>
-  </body>
+								<p><span class="uk-text-primary">Silvia Valerio de Martinez</span> <br>
+								<strong>Presidente Fundación Cor</strong></p>
+							</div> -->
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--/CONTENT-->
+			
+			
+			<!--FOOTER-->
+			<footer class="uk-section uk-section-small uk-section-muted">
+<!-- 				<div class="uk-container">
+					<p class="uk-text-small uk-text-center">Copyright 2018 - <a href="https://github.com/zzseba78/Kick-Off">Created by KickOff</a> | Built with <a href="http://getuikit.com" title="Visit UIkit 3 site" target="_blank" uk-tooltip><span uk-icon="uikit"></span></a></p>
+				</div> -->
+			</footer>
+			<!--/FOOTER-->
+			<!-- OFFCANVAS -->
+			<div id="offcanvas-nav" uk-offcanvas="flip: true; overlay: true">
+				<div class="uk-offcanvas-bar uk-offcanvas-bar-animation uk-offcanvas-slide">
+					<button class="uk-offcanvas-close uk-close" type="button" uk-close></button>
+					<ul class="uk-nav uk-nav-default">
+<!-- 						<li class="uk-active"><a href="#">INICIO</a></li>
+						<li class="uk-parent">
+							<a href="#">Parent</a>
+							<ul class="uk-nav-sub">
+								<li><a href="#">Sub item</a></li>
+								<li><a href="#">Sub item</a></li>
+							</ul>
+						</li> -->
+						<li class="uk-nav-header">Menu</li>
+						<li><a href="#js-options"><span class="uk-margin-small-right" uk-icon="icon: home"></span> INICIO</a></li>
+						<li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: thumbnails"></span> MISION</a></li>
+						<li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: tag"></span> OBJETIVOS</a></li>
+						<li class="uk-nav-divider"></li>
+						<li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: calendar"></span> ACTIVIDADES</a></li>
+						<li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: calendar"></span> ARTICULOS</a></li>
+						<li class="uk-nav-divider"></li>
+						<li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: users"></span> DONACIONES</a></li>
+						<li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: happy"></span> CONTACTO</a></li>
+						<li class="uk-nav-divider"></li>
+						<li><a href="login.html"><span class="uk-margin-small-right" uk-icon="icon:  sign-in"></span> LOGIN</a></li>
+					</ul>
+					<h3>Fundación Cor</h3>
+					<p>Â¡VOS Y YO SOMOS NOSOTROS!</p>
+					<a href="#" class="uk-button uk-button-default uk-margin-top uk-width-1-1">DONAR</a>
+				</div>
+			</div>
+			<!-- /OFFCANVAS -->
+		</div>
+		<!-- JS FILES -->
+        <script src="pages/js/uikit.min.js"></script>
+        <script src="pages/js/uikit-icons.min.js"></script>
+		
+	</body>
 </html>
-<script>
-    $(document).foundation();
-    $(document).ready(function() {
-
-        $('#arrowR').click(function() {
-            event.preventDefault();
-            $('#content').animate({
-                scrollLeft: "+=200px"
-            }, "slow");
-        });
-
-        $('#arrowL').click(function() {
-            event.preventDefault();
-            $('#content').animate({
-                scrollLeft: "-=200px"
-            }, "slow");
-        });
-
-        $(function() {
-            $('.search')
-                .bind('click', function(event) {
-                    $(".search-field").toggleClass("expand-search");
-
-                    // if the search field is expanded, focus on it
-                    if ($(".search-field").hasClass("expand-search")) {
-                        $(".search-field").focus();
-                    }
-                })
-        });
-
-
-
-    });
-</script>

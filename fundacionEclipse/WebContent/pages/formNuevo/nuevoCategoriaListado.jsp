@@ -2,7 +2,7 @@
 	<div class="title bg-color5 panel txt-white">
 		<h3>Categoria Clasificado</h3>
 	</div>
-	<stripes:form beanclass="birra.controlador.actionBeans.PanelActionBean" partial="true" >
+	<stripes:form beanclass="cor.controlador.actionBeans.PanelActionBean" partial="true" >
 	  	<div class="row expanded">
 	 		<div class="small-12 columns">	  		
 		  		<div class="row expanded vHeight" >

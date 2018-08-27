@@ -10,7 +10,6 @@
 		      <thead>
 		      <tr class="txt-oil">
 		        <th width="50">N°</th>
-		        <th width="250">Categoria</th>
 		        <th width="500">Titulo</th>
 		        <th width="350">Fecha</th>
 		        <th width="300">Acciones</th>
@@ -24,7 +23,6 @@
 			        	<td>
 			        		${p.titulo}
 			        	</td>
-			        	<td>${p.autor}</td>
 			        	<td><small><fmt:formatDate value="${p.fecha}"/></small></td>
 			        	<td>
 			        		<c:if test="${p.publicada}">

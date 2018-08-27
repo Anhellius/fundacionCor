@@ -285,11 +285,15 @@ nav.nav-scroll {
 
 .size-84 { font-size: 64px !important;
     @include tablet{
-      font-size: 84px !important;
+      font-size: 74px !important;
     }
  }
 
-.size-96 { font-size: 6rem !important; }
+.size-96 { font-size: 3rem !important;
+    @include tablet{
+      font-size: 6rem !important;
+    }
+ }
 
 .size-108 { font-size: 6.75rem !important; }
 

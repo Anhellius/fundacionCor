@@ -23,29 +23,47 @@
 	<body>
 		<div class="uk-offcanvas-content">
 			<!--HEADER-->
-			<header style="background-color: #fff; border-bottom: 1px solid #f2f2f2" data-uk-sticky="show-on-up: true; animation: uk-animation-slide-top">
-				<div class="uk-container">
-					<nav class="uk-margin-top uk-margin-small-bottom" id="navbar" data-uk-navbar="mode: click;">
+			<header id="header" style="background-color: #fff;" uk-sticky="show-on-up: true; animation: uk-animation-fade; media: @l">
+				<div class="uk-container uk-container-expand">
+					<nav class="uk-margin-top uk-margin-small-bottom" id="navbar" uk-navbar="mode: hover;">
 						<div class="uk-navbar-left nav-overlay uk-visible@m">
+							<a class="uk-navbar-item uk-logo" href="index.html" title="Logo"><img src="images/logocor1.png" alt="Logo" style="height: 88px"></a>
 							<ul class="uk-navbar-nav">
+					            <li>
+					                <a href="#">Quienes somos</a>
+					                <div class="uk-navbar-dropdown">
+					                    <ul class="uk-nav uk-navbar-dropdown-nav">
+					                        <li><a href="#">Mision</a></li>
+					                        <!-- <li class="uk-nav-header">Header</li> -->
+					                        <li><a href="#">Objetivos</a></li>
+					                        <li><a href="#">Actividades</a></li>
+					                        <!-- <li class="uk-nav-divider"></li>
+					                        <li><a href="#">Item</a></li> -->
+					                    </ul>
+					                </div>
+					            </li>
 								<li>
-									<a href="#" title="Subscribe">Donar</a>
+									<a href="#" title="Subscribe">Donaciones</a>
 								</li>
 								<li>
-									<a href="login.html" title="Sign Up">Login</a>
+									<a href="articulos.html" title="Subscribe">Articulos</a>
+								</li>
+								<li>
+									<a href="#" title="Subscribe">Contacto</a>
 								</li>
 							</ul>
 						</div>
-						<div class="uk-navbar-center nav-overlay">
-							<a class="uk-navbar-item uk-logo" href="index.html" title="Logo"><img src="images/logo-2.jpeg" alt="Logo" style="height: 88px"></a>
-						</div>
-						<div class="uk-navbar-right nav-overlay">
-							<a class="uk-navbar-toggle uk-visible@m" data-uk-search-icon data-uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href="#"></a>
+						<!-- <div class="uk-navbar-center nav-overlay">
+							
+						</div> -->
+						<div class="uk-navbar-right nav-overlay uk-light">
+							<a class="uk-navbar-toggle uk-visible@m" uk-search-icon uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href="#"></a>
 							<div class="uk-navbar-item">
-								<a class="uk-visible@s" style="margin-right: 4px" href="#" data-uk-icon="facebook"></a>
-								<!-- <a class="uk-visible@s" style="margin-right: 4px" href="#" data-uk-icon="twitter"></a>
-								<a class="uk-visible@s" style="margin-right: 4px" href="#" data-uk-icon="instagram"></a> -->
-								<a class="uk-navbar-toggle uk-hidden@m" data-uk-toggle data-uk-navbar-toggle-icon href="#offcanvas-nav"></a>
+								<a class="uk-visible@s uk-margin-right" style="margin-right: 4px" href="#" uk-icon="facebook"></a>
+								<!-- <a class="uk-visible@s" style="margin-right: 4px" href="#" uk-icon="twitter"></a>
+								<a class="uk-visible@s" style="margin-right: 4px" href="#" uk-icon="instagram"></a> -->
+								<a class="uk-navbar-toggle uk-hidden@m" uk-toggle uk-navbar-toggle-icon href="#offcanvas-nav"></a>
+								<a href="login.html" class="uk-button uk-button-default">Login</a>
 							</div>
 							
 						</div>
@@ -55,14 +73,14 @@
 									<input class="uk-search-input" type="search" placeholder="Buscar...">
 								</form>
 							</div>
-							<a class="uk-navbar-toggle" data-uk-close data-uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href="#"></a>
+							<a class="uk-navbar-toggle" uk-close uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href="#"></a>
 						</div>
 					</nav>
 				</div>
 			</header>
 			<!--/HEADER-->
 						<!-- NAVIGATION -->
-			<div class="uk-container">
+<!-- 			<div class="uk-container">
 				<nav class="nav-scroll">
 					<ul class="uk-subnav uk-flex uk-flex-between uk-flex-nowrap" data-ukmargin>
 						<li class="uk-active"><a href="index.html">Inicio</a></li>
@@ -74,7 +92,7 @@
 						<li><a href="#">Contacto</a></li>
 					</ul>
 				</nav>
-			</div>
+			</div> -->
 			<!-- /NAVIGATION -->
 			<!--AUTHOR-->
 			<section class="uk-section uk-section-small">

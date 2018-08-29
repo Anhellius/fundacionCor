@@ -85,6 +85,24 @@ nav.nav-scroll {
     height: 48vh;
   }
 }
+.height-80vh{
+  height: 80vh;
+  @media only screen and (max-width: 600px) {
+    height: 55vh;
+  }
+    @media only screen and (max-width: 320px) {
+    height: 50vh;
+  }
+}
+.height-90vh{
+  height: 90vh;
+  @media only screen and (max-width: 600px) {
+    height: 60vh;
+  }
+    @media only screen and (max-width: 320px) {
+    height: 58vh;
+  }
+}
 .height-100vh{
   height: 100vh;
 }

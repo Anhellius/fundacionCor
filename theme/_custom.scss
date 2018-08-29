@@ -1,3 +1,20 @@
+@mixin mobile{
+  @media only screen and (min-width: #{$mobile}) {
+    @content;
+  }
+}
+
+@mixin tablet{
+  @media only screen and (min-width: #{$tablet}) {
+    @content;
+  }
+}
+
+@mixin desktop{
+  @media only screen and (min-width: #{$desktop}) {
+    @content;   
+  }
+}
 nav.nav-scroll {
 				position: relative;
 				z-index: 2;
@@ -87,12 +104,15 @@ nav.nav-scroll {
 }
 .height-80vh{
   height: 80vh;
-  @media only screen and (max-width: 600px) {
-    height: 55vh;
-  }
-    @media only screen and (max-width: 320px) {
-    height: 50vh;
-  }
+  // @include tablet{
+  //   height: 80vh;
+  // }
+  // @media only screen and (max-width: 600px) {
+  //   height: 55vh;
+  // }
+  //   @media only screen and (max-width: 320px) {
+  //   height: 50vh;
+  // }
 }
 .height-90vh{
   height: 90vh;
@@ -134,23 +154,9 @@ nav.nav-scroll {
 @include scrollbars(0, slategray);
 
 
-@mixin mobile{
-  @media only screen and (min-width: #{$mobile}) {
-    @content;
-  }
-}
-
-@mixin tablet{
-  @media only screen and (min-width: #{$tablet}) {
-    @content;
-  }
-}
-
-@mixin desktop{
-  @media only screen and (min-width: #{$desktop}) {
-    @content;   
-  }
-}
+.uk-background-bcoProvincia { background-color: $global-terciary-background; }
+// .uk-background-bcoRio { background-color: $background-bcoRio-background; }
+// .uk-background-bcoNacion { background-color: $background-bcoNacion-background; }
         
 // .border-bottom-complementario{
 // 	border-bottom: 4px solid #FC9803;
@@ -430,66 +436,100 @@ nav.nav-scroll {
 //  * Terciary
 //  */
 
-// $card-terciary-background:                     $global-terciary-background !default;
-// $card-terciary-color:                          $global-inverse-color !default;
-// $card-terciary-title-color:                    $card-terciary-color !default;
-// $card-terciary-hover-background:               darken($card-terciary-background, 5%) !default;
-// $card-terciary-color-mode:                     light !default;
+$card-terciary-background:                     $global-terciary-background !default;
+$card-terciary-color:                          $global-inverse-color !default;
+$card-terciary-title-color:                    $card-terciary-color !default;
+$card-terciary-hover-background:               darken($card-terciary-background, 5%) !important;
+$card-terciary-color-mode:                     light !default;
 
-// .uk-card-terciary {
-//     background: $card-terciary-background;
-//     color: $card-terciary-color;
-//     @if(mixin-exists(hook-card-terciary)) {@include hook-card-terciary();}
-// }
+.uk-card-terciary {
+    background: $card-terciary-background;
+    color: $card-terciary-color;
+    @if(mixin-exists(hook-card-terciary)) {@include hook-card-terciary();}
+}
 
-// .uk-card-terciary .uk-card-title {
-//     color: $card-terciary-title-color;
-//     @if(mixin-exists(hook-card-terciary-title)) {@include hook-card-terciary-title();}
-// }
+.uk-card-terciary .uk-card-title {
+    color: $card-terciary-title-color;
+    @if(mixin-exists(hook-card-terciary-title)) {@include hook-card-terciary-title();}
+}
 
-// .uk-card-terciary.uk-card-hover:hover {
-//     background-color: $card-terciary-hover-background;
-//     @if(mixin-exists(hook-card-terciary-hover)) {@include hook-card-terciary-hover();}
-// }
+.uk-card-terciary.uk-card-hover:hover {
+    background-color: $card-terciary-hover-background;
+    @if(mixin-exists(hook-card-terciary-hover)) {@include hook-card-terciary-hover();}
+}
 
-// // Color Mode
-// @if ( $card-terciary-color-mode == light ) { .uk-card-terciary.uk-card-body { @extend .uk-light !optional;} }
-// @if ( $card-terciary-color-mode == light ) { .uk-card-terciary > :not([class*='uk-card-media']) { @extend .uk-light !optional;} }
-// @if ( $card-terciary-color-mode == dark ) { .uk-card-terciary.uk-card-body { @extend .uk-dark !optional;} }
-// @if ( $card-terciary-color-mode == dark ) { .uk-card-terciary > :not([class*='uk-card-media']) { @extend .uk-dark !optional;} }
+// Color Mode
+@if ( $card-terciary-color-mode == light ) { .uk-card-terciary.uk-card-body { @extend .uk-light !optional;} }
+@if ( $card-terciary-color-mode == light ) { .uk-card-terciary > :not([class*='uk-card-media']) { @extend .uk-light !optional;} }
+@if ( $card-terciary-color-mode == dark ) { .uk-card-terciary.uk-card-body { @extend .uk-dark !optional;} }
+@if ( $card-terciary-color-mode == dark ) { .uk-card-terciary > :not([class*='uk-card-media']) { @extend .uk-dark !optional;} }
+
+
+// /*
+//  * Quaterciary
+//  */
+
+$card-quaterciary-background:                     $global-quaterciary-background !default;
+$card-quaterciary-color:                          $global-inverse-color !default;
+$card-quaterciary-title-color:                    $card-quaterciary-color !default;
+$card-quaterciary-hover-background:               darken($card-quaterciary-background, 5%) !important;
+$card-quaterciary-color-mode:                     light !default;
+
+.uk-card-quaterciary {
+    background: $card-quaterciary-background;
+    color: $card-quaterciary-color;
+    @if(mixin-exists(hook-card-quaterciary)) {@include hook-card-quaterciary();}
+}
+
+.uk-card-quaterciary .uk-card-title {
+    color: $card-quaterciary-title-color;
+    @if(mixin-exists(hook-card-quaterciary-title)) {@include hook-card-quaterciary-title();}
+}
+
+.uk-card-quaterciary.uk-card-hover:hover {
+    background-color: $card-quaterciary-hover-background;
+    @if(mixin-exists(hook-card-quaterciary-hover)) {@include hook-card-quaterciary-hover();}
+}
+
+// Color Mode
+@if ( $card-quaterciary-color-mode == light ) { .uk-card-quaterciary.uk-card-body { @extend .uk-light !optional;} }
+@if ( $card-quaterciary-color-mode == light ) { .uk-card-quaterciary > :not([class*='uk-card-media']) { @extend .uk-light !optional;} }
+@if ( $card-quaterciary-color-mode == dark ) { .uk-card-quaterciary.uk-card-body { @extend .uk-dark !optional;} }
+@if ( $card-quaterciary-color-mode == dark ) { .uk-card-quaterciary > :not([class*='uk-card-media']) { @extend .uk-dark !optional;} }
+
 
 
 // /*
 //  * Complementario
 //  */
 
-// $card-complementario-background:                     $global-complementario-background !default;
-// $card-complementario-color:                          $global-inverse-color !default;
-// $card-complementario-title-color:                    $card-complementario-color !default;
-// $card-complementario-hover-background:               darken($card-complementario-background, 5%) !default;
-// $card-complementario-color-mode:                     light !default;
+$card-complementario-background:                     $global-complementario-background !default;
+$card-complementario-color:                          $global-inverse-color !default;
+$card-complementario-title-color:                    $card-complementario-color !default;
+$card-complementario-hover-background:               darken($card-complementario-background, 5%) !important;
+$card-complementario-color-mode:                     light !default;
 
-// .uk-card-complementario {
-//     background: $card-complementario-background;
-//     color: $card-complementario-color;
-//     @if(mixin-exists(hook-card-complementario)) {@include hook-card-complementario();}
-// }
+.uk-card-complementario {
+    background: $card-complementario-background;
+    color: $card-complementario-color;
+    @if(mixin-exists(hook-card-complementario)) {@include hook-card-complementario();}
+}
 
-// .uk-card-complementario .uk-card-title {
-//     color: $card-complementario-title-color;
-//     @if(mixin-exists(hook-card-complementario-title)) {@include hook-card-complementario-title();}
-// }
+.uk-card-complementario .uk-card-title {
+    color: $card-complementario-title-color;
+    @if(mixin-exists(hook-card-complementario-title)) {@include hook-card-complementario-title();}
+}
 
-// .uk-card-complementario.uk-card-hover:hover {
-//     background-color: $card-complementario-hover-background;
-//     @if(mixin-exists(hook-card-complementario-hover)) {@include hook-card-complementario-hover();}
-// }
+.uk-card-complementario.uk-card-hover:hover {
+    background-color: $card-complementario-hover-background;
+    @if(mixin-exists(hook-card-complementario-hover)) {@include hook-card-complementario-hover();}
+}
 
-// // Color Mode
-// @if ( $card-complementario-color-mode == light ) { .uk-card-complementario.uk-card-body { @extend .uk-light !optional;} }
-// @if ( $card-complementario-color-mode == light ) { .uk-card-complementario > :not([class*='uk-card-media']) { @extend .uk-light !optional;} }
-// @if ( $card-complementario-color-mode == dark ) { .uk-card-complementario.uk-card-body { @extend .uk-dark !optional;} }
-// @if ( $card-complementario-color-mode == dark ) { .uk-card-complementario > :not([class*='uk-card-media']) { @extend .uk-dark !optional;} }
+// Color Mode
+@if ( $card-complementario-color-mode == light ) { .uk-card-complementario.uk-card-body { @extend .uk-light !optional;} }
+@if ( $card-complementario-color-mode == light ) { .uk-card-complementario > :not([class*='uk-card-media']) { @extend .uk-light !optional;} }
+@if ( $card-complementario-color-mode == dark ) { .uk-card-complementario.uk-card-body { @extend .uk-dark !optional;} }
+@if ( $card-complementario-color-mode == dark ) { .uk-card-complementario > :not([class*='uk-card-media']) { @extend .uk-dark !optional;} }
 
 
 // //////////////////////

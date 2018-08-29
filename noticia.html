@@ -26,9 +26,9 @@
 			<header id="header" style="background-color: #fff;" uk-sticky="show-on-up: true; animation: uk-animation-fade; media: @l">
 				<div class="uk-container uk-container-expand">
 					<nav class="uk-margin-top uk-margin-small-bottom" id="navbar" uk-navbar="mode: hover;">
-						<div class="uk-navbar-left nav-overlay uk-visible@m">
-							<a class="uk-navbar-item uk-logo" href="index.html" title="Logo"><img src="images/logocor1.png" alt="Logo" style="height: 88px"></a>
-							<ul class="uk-navbar-nav">
+						<div class="uk-navbar-left nav-overlay">
+							<a class="uk-navbar-item uk-logo" href="index.html" title="Logo"><img src="images/logocor1.png" alt="Logo" style="height: 90px; width: 127px"></a>
+							<ul class="uk-navbar-nav uk-visible@m">
 					            <li>
 					                <a href="#">Quienes somos</a>
 					                <div class="uk-navbar-dropdown">
@@ -43,27 +43,28 @@
 					                </div>
 					            </li>
 								<li>
-									<a href="#" title="Subscribe">Donaciones</a>
+									<a href="donaciones.html" title="Donaciones">Donaciones</a>
 								</li>
 								<li>
-									<a href="articulos.html" title="Subscribe">Articulos</a>
+									<a href="articulos.html" title="Artículos">Articulos</a>
 								</li>
 								<li>
-									<a href="#" title="Subscribe">Contacto</a>
+									<a href="contacto.html" title="Contacto">Contacto</a>
 								</li>
 							</ul>
 						</div>
 						<!-- <div class="uk-navbar-center nav-overlay">
 							
 						</div> -->
-						<div class="uk-navbar-right nav-overlay uk-light">
-							<a class="uk-navbar-toggle uk-visible@m" uk-search-icon uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href="#"></a>
+						<div class="uk-navbar-right nav-overlay">
+							<!-- <a class="uk-navbar-item uk-logo" href="index.html" title="Logo"><img src="images/logocor1.png" alt="Logo" style="height: 88px"></a> -->
+							<!-- <a class="uk-navbar-toggle uk-visible@m" uk-search-icon uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href="#"></a> -->
 							<div class="uk-navbar-item">
-								<a class="uk-visible@s uk-margin-right" style="margin-right: 4px" href="#" uk-icon="facebook"></a>
+								<a href="" class="uk-icon-button  uk-margin-medium-right" uk-icon="facebook"></a>
 								<!-- <a class="uk-visible@s" style="margin-right: 4px" href="#" uk-icon="twitter"></a>
 								<a class="uk-visible@s" style="margin-right: 4px" href="#" uk-icon="instagram"></a> -->
 								<a class="uk-navbar-toggle uk-hidden@m" uk-toggle uk-navbar-toggle-icon href="#offcanvas-nav"></a>
-								<a href="login.html" class="uk-button uk-button-default">Login</a>
+								<a href="login.html" class="uk-button uk-button-default uk-visible@m"><span class="">Login</span></a>
 							</div>
 							
 						</div>
@@ -475,10 +476,10 @@
 			<!-- /BOTTOM BAR -->
 			
 			<!-- OFFCANVAS -->
-			<div id="offcanvas-nav" data-uk-offcanvas="flip: true; overlay: true">
+			<div id="offcanvas-nav" uk-offcanvas="flip: true; overlay: true">
 				<div class="uk-offcanvas-bar uk-offcanvas-bar-animation uk-offcanvas-slide">
-					<button class="uk-offcanvas-close uk-close" type="button" data-uk-close></button>
-					<ul class="uk-nav uk-nav-default">
+					<button class="uk-offcanvas-close uk-close" type="button" uk-close></button>
+					<ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
 <!-- 						<li class="uk-active"><a href="#">INICIO</a></li>
 						<li class="uk-parent">
 							<a href="#">Parent</a>
@@ -488,21 +489,27 @@
 							</ul>
 						</li> -->
 						<li class="uk-nav-header">Menu</li>
-						<li><a href="#js-options"><span class="uk-margin-small-right" data-uk-icon="icon: home"></span> INICIO</a></li>
-						<li><a href="#"><span class="uk-margin-small-right" data-uk-icon="icon: thumbnails"></span> MISION</a></li>
-						<li><a href="#"><span class="uk-margin-small-right" data-uk-icon="icon: tag"></span> OBJETIVOS</a></li>
+						<li><a href="/"><span class="uk-margin-small-right" uk-icon="icon: home"></span> INICIO</a></li>
+				        <li class="uk-parent">
+				            <a href="#"><span class="uk-margin-small-right" uk-icon="icon: users"></span>QUIENES SOMOS</a>
+				            <ul class="uk-nav-sub">
+				                <li><a href="#">Misión</a></li>
+				                <li><a href="#">Objetivos</a></li>
+				                <li><a href="#">Actividad</a></li>
+				            </ul>
+				        </li>
 						<li class="uk-nav-divider"></li>
-						<li><a href="#"><span class="uk-margin-small-right" data-uk-icon="icon: calendar"></span> ACTIVIDADES</a></li>
-						<li><a href="#"><span class="uk-margin-small-right" data-uk-icon="icon: calendar"></span> ARTICULOS</a></li>
+						<li><a href="articulos.html"><span class="uk-margin-small-right" uk-icon="icon: calendar"></span> ARTICULOS</a></li>
+						<li><a href="contacto.html"><span class="uk-margin-small-right" uk-icon="icon: happy"></span> CONTACTO</a></li>
+						<!-- <li class="uk-nav-divider"></li>
+						<li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: users"></span> DONACIONES</a></li> -->
+
 						<li class="uk-nav-divider"></li>
-						<li><a href="#"><span class="uk-margin-small-right" data-uk-icon="icon: users"></span> DONACIONES</a></li>
-						<li><a href="#"><span class="uk-margin-small-right" data-uk-icon="icon: happy"></span> CONTACTO</a></li>
-						<li class="uk-nav-divider"></li>
-						<li><a href="login.html"><span class="uk-margin-small-right" data-uk-icon="icon:  sign-in"></span> LOGIN</a></li>
+						<li><a href="login.html"><span class="uk-margin-small-right" uk-icon="icon:  sign-in"></span> LOGIN</a></li>
 					</ul>
 					<h3>Fundación Cor</h3>
 					<p>¡VOS Y YO SOMOS NOSOTROS!</p>
-					<a href="#" class="uk-button uk-button-default uk-margin-top uk-width-1-1">DONAR</a>
+					<a href="donaciones.html" class="uk-button uk-button-default uk-margin-top uk-width-1-1">DONAR</a>
 				</div>
 			</div>
 			<!-- /OFFCANVAS -->

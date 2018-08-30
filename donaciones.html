@@ -48,16 +48,12 @@
 								</li>
 							</ul>
 						</div>
-						<!-- <div class="uk-navbar-center nav-overlay">
-							
-						</div> -->
+
 						<div class="uk-navbar-right nav-overlay">
-							<!-- <a class="uk-navbar-item uk-logo" href="index.html" title="Logo"><img src="images/logocor1.png" alt="Logo" style="height: 88px"></a> -->
-							<!-- <a class="uk-navbar-toggle uk-visible@m" uk-search-icon uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href="#"></a> -->
+
 							<div class="uk-navbar-item">
 								<a href="" class="uk-icon-button  uk-margin-medium-right" uk-icon="facebook"></a>
-								<!-- <a class="uk-visible@s" style="margin-right: 4px" href="#" uk-icon="twitter"></a>
-								<a class="uk-visible@s" style="margin-right: 4px" href="#" uk-icon="instagram"></a> -->
+
 								<a class="uk-navbar-toggle uk-hidden@m" uk-toggle uk-navbar-toggle-icon href="#offcanvas-nav"></a>
 								<a href="login.html" class="uk-button uk-button-default uk-visible@m"><span class="">Login</span></a>
 							</div>
@@ -75,102 +71,138 @@
 				</div>
 			</header>
 			<!--/HEADER-->
-			<!-- NAVIGATION -->
-<!-- 			<div class="uk-container">
-				<nav class="nav-scroll">
-					<ul class="uk-subnav uk-flex uk-flex-between uk-flex-nowrap" data-ukmargin>
-						<li class="uk-active"><a href="index.html">Inicio</a></li>
-						<li><a href="#">Mision</a></li>
-						<li><a href="#">Objetivos</a></li>
-						<li><a href="#">Actividades</a></li>
-						<li><a href="#">Donaciones</a></li>
-						<li><a href="articulos.html">Articulos</a></li>
-						<li><a href="#">Contacto</a></li>
-					</ul>
-				</nav>
-			</div> -->
-			<!-- /NAVIGATION -->
+
 
 			<!--CONTENT-->
 			<div class="uk-section uk-section-default">
 				<div class="uk-container">
-					<div class="uk-grid" data-ukgrid>
+					<div class="uk-grid" uk-grid>
 						<div class="uk-width-2-3@m uk-margin-medium-bottom">
-						<h3 class="uk-heading-line uk-text-bold"><span>Formulario para donación mensual</span></h3>
-                            <form class="uk-grid-small" uk-grid>
-							    
+							<h3 class="uk-heading-line uk-text-bold"><span>Formulario para donación mensual</span></h3>
+							<div class="uk-card uk-card-default">
+							<div class="stepwizard uk-width-1-1 uk-background-muted">
+							    <div class="stepwizard-row setup-panel">
+							      <div class="stepwizard-step">
+							        <a href="#step-1" type="button" class="uk-button uk-button-primary btn-circle">1</a>
+							        <p>Paso 1</p>
+							      </div>
+							      <div class="stepwizard-step">
+							        <a href="#step-2" type="button" class="uk-button uk-button-quinterciary btn-circle" disabled="disabled">2</a>
+							        <p>Paso 2</p>
+							      </div>
+							      <div class="stepwizard-step">
+							        <a href="#step-3" type="button" class="uk-button uk-button-quinterciary btn-circle" disabled="disabled">3</a>
+							        <p>Paso 3</p>
+							      </div>
+							      <div class="stepwizard-step">
+							        <a href="#step-4" type="button" class="uk-button uk-button-quinterciary btn-circle" disabled="disabled">4</a>
+							        <p>Paso 4</p>
+							      </div>
+							    </div>
+						  	</div>
 
-							        <legend class="uk-legend">Datos personales</legend>
+	                        <form class="uk-grid-small  uk-card-body" id="contactForm" role="form" action="insert.php" method="POST" uk-grid>
+	                        	<div class="alert uk-alert-success" uk-alert>
+			                        <a class="uk-alert-close" uk-close></a>
+			                        <p class="txt-dark">Mensaje enviado, gracias por contactarte.</p>
+			                    </div>
 
-							        <div class="uk-width-1-3@m">
-							            <input class="uk-input" type="text" placeholder="Nombre">
+						        
+								<div class="setup-content uk-width-1-1 uk-grid-small" id="step-1" uk-grid>
+									<legend class="uk-legend">Datos personales</legend>
+						        	<div class="uk-width-1-3@m form-group">
+	                        			<input class="uk-input" type="text" placeholder="Nombre" name="nombre" id="nombre" data-validation="required" data-validation-regexp="^([a-zA-Z\s]{3,})$" data-validation-error-msg='Ingrese un nombre de contacto'>
 							        </div>
-							        <div class="uk-width-1-3@m">
-							            <input class="uk-input" type="text" placeholder="Apellido">
+							        <div class="uk-width-1-3@m form-group">
+	                        			<input class="uk-input" type="text" placeholder="Apellido" name="apellido" id="apellido" data-validation="required" data-validation-regexp="^([a-zA-Z\s]{3,})$" data-validation-error-msg='Ingrese un apellido de contacto'>
 							        </div>					
-							        <div class="uk-width-1-3@m">
-							            <input class="uk-input" type="text" placeholder="DNI/LE/LC">
+							        <div class="uk-width-1-3@m form-group">
+	                        			<input class="uk-input" type="text" placeholder="CUIT/CUIL" name="cuit" id="cuit" data-validation="number" data-validation-length="11-11" data-validation-error-msg='Ingrese un CUIT/CUIL válido'>
 							        </div>
-							        <div class="uk-width-1-1@m">
-							            <input class="uk-input" type="text" placeholder="Mail">
+
+							        <div class="uk-wodth-1-1 uk-margin-medium-top">
+							        	<hr>
+							        	<p class="uk-text-right">
+											<button class="uk-button uk-button-default nextBtn " type="button">Siguiente</button>
+										</p>
+									</div>							        
+							    </div>
+
+
+								<div class="setup-content uk-width-1-1  uk-grid-small" id="step-2" uk-grid>
+									<legend class="uk-legend">Datos personales</legend>
+							        <div class="uk-width-1-2@m">
+	                        			<input class="uk-input" type="text" placeholder="Mail" name="email" id="email" data-validation="email" data-validation="required" data-validation-error-msg='Ingrese una cuenta de correo válida'>
 							        </div>							        
-							        <div class="uk-width-1-3@m">
-							            <input class="uk-input" type="text" placeholder="Teléfono Particular">
+							        <div class="uk-width-1-2@m">
+	                        			<input class="uk-input" type="text" placeholder="Teléfono" name="telefono" id="telefono" data-validation="email" data-validation="number" data-validation-error-msg='Ingrese un  teléfono válida'>
 							        </div>
-							        <div class="uk-width-1-3@m">
-							            <input class="uk-input" type="text" placeholder="Teléfono Comercial">
-							        </div>							        
-							        <div class="uk-width-1-3@m">
-							            <input class="uk-input" type="text" placeholder="Móvil">
-							        </div>
+							        <div class="uk-wodth-1-1">
+							        	<p class="uk-text-right uk-margin-medium-top">
+							        		<hr>
+					                  		<button class="uk-button uk-button-default prevBtn " type="button">Atras</button>
+	          								<button class="uk-button uk-button-default nextBtn " type="button">Siguiente</button>
+	          							</p>
+	      							</div>
+								</div>
+
+								<div class="setup-content uk-width-1-1  uk-grid-small" id="step-3" uk-grid>
+									<legend class="uk-legend">Datos personales</legend>
 							        <div class="uk-width-2-5@m">
-							            <input class="uk-input" type="text" placeholder="Dirección calle">
+	                        			<input class="uk-input" type="text" placeholder="Dirección calle" name="calle" id="calle"  data-validation="required" data-validation-error-msg='Ingrese una  dirección válida'>
 							        </div>
 							        <div class="uk-width-1-5@m">
-							            <input class="uk-input" type="text" placeholder="Nro">
+	                        			<input class="uk-input" type="text" placeholder="Nro" name="calleNro" id="calleNro"  data-validation="required"  data-validation-error-msg='Ingrese un  número válida'>
 							        </div>
 							        <div class="uk-width-1-5@m">
-							            <input class="uk-input" type="text" placeholder="Piso">
+	                        			<input class="uk-input" type="text" placeholder="Piso" name="callePiso" id="callePiso"  data-validation="required" data-validation-error-msg='Ingrese un  piso válida'>
 							        </div>
 							        <div class="uk-width-1-5@m">
-							            <input class="uk-input" type="text" placeholder="Dpto.">
+	                        			<input class="uk-input" type="text" placeholder="Dpto" name="calleDpto" id="calleDpto"  data-validation="required" data-validation-error-msg='Ingrese un dpto válida'>
 							        </div>
 							        <div class="uk-width-1-3@m">
-							            <input class="uk-input" type="text" placeholder="Provincia">
+	                        			<input class="uk-input" type="text" placeholder="Provincia" name="provincia" id="provincia"  data-validation="required" data-validation-error-msg='Ingrese una provincia válida'>
 							        </div>								        
 							        <div class="uk-width-1-3@m">
-							            <input class="uk-input" type="text" placeholder="Localidad">
+	                        			<input class="uk-input" type="text" placeholder="Localidad" name="localidad" id="localidad"  data-validation="required" data-validation-error-msg='Ingrese una  localidad válida'>
 							        </div>
 							        <div class="uk-width-1-3@m">
-							            <input class="uk-input" type="text" placeholder="Código Postal">
+	                        			<input class="uk-input" type="text" placeholder="Código Postal" name="cp" id="cp"  data-validation="required" data-validation-error-msg='Ingrese un CP válida'>
 							        </div>
+							        <div class="uk-wodth-1-1">
+							        	<p class="uk-text-right  uk-margin-medium-top">
+							        		<hr>
+							          		<button class="uk-button uk-button-default prevBtn " type="button">Atras</button>
+							          		<button class="uk-button uk-button-default nextBtn " type="button">Siguiente</button>	
+							          	</p>	
+						          	</div>					        
+								</div>
 
+								<div class="setup-content uk-width-1-1  uk-grid-small" id="step-4" uk-grid>
 							        <legend class="uk-legend">Quiero donar</legend>	
 							        <p>
-							        	Autorizo a <span class="uk-text-primary">Fundación Cor</span>, entidad sin fines de lucro, a debitar a través del sistema de débito del banco <span class="uk-text-warning"><strong>Santander Río</strong></span>, el siguiente aporte mensual de mi cuenta nro: <input class="uk-input uk-form-blank uk-form-width-medium" type="text" placeholder="escriba el nro de cuenta"> del banco <input class="uk-input uk-form-blank uk-form-width-medium" type="text" placeholder="escriba el Banco"> que se cancelará con solamente solicitarlo a mi banco.
-							        </p>					        							        							        							        
+							        	Autorizo a <span class="uk-text-primary">Fundación Cor</span>, entidad sin fines de lucro, a debitar a través del sistema de débito del banco <span class="uk-text-warning"><strong>Santander Río</strong></span>, el siguiente aporte <strong>mensual</strong> de mi cuenta nro: <input class="uk-input uk-form-blank uk-form-width-medium" type="text" placeholder="escriba el nro de cuenta"> del banco <input class="uk-input uk-form-blank uk-form-width-medium" type="text" placeholder="escriba el Banco"> que se cancelará con solamente solicitarlo a mi banco.
+							        </p>					        							        							      
+							        <div class="uk-width-1-1">
+							        	Faltan <span id="pres-max-length">24</span> números
+							            <input class="uk-input" type="text" name="cbu"  id="cbu" placeholder="CBU"  data-validation="number" data-validation-length="24-24"  data-validation-error-msg='Ingrese un CBU válida'>
+							        </div>  							        
 
 							        <div class="uk-width-1-1 ">
-							            <label><input class="uk-radio" type="radio" name="radio2"> $ 500</label><br>
-							            <label><input class="uk-radio" type="radio" name="radio2"> $ 350</label><br>
-							            <label><input class="uk-radio" type="radio" name="radio2"> $ 200</label><br>
-							            <label><input class="uk-radio" type="radio" name="radio2"> $ 100</label><br>
-							            <label><input class="uk-radio" type="radio" name="radio2"> Por única vez</label>
-							            <input class="uk-input uk-form-blank uk-form-width-large" type="text" placeholder="Escriba el importe que desea donar">
+							            <label><input class="uk-input uk-form-width-small" type="text" placeholder="Importe"> Por mes</label>
+							            
 							        </div>
-
-							        <div class="uk-width-1-1">
-							            <input class="uk-input" type="text" placeholder="CBU">
-							        </div>
-
-							    <div class="uk-width-1-1@m">
-							    	<p class="uk-text-right">
-						            <button class="uk-button uk-button-default" type="button">Siguiente</button>
-						            <button class="uk-button uk-button-primary" type="button">Donar</button>
-						        </p>
-									<!-- <a href="#" class="uk-button uk-button-primary uk-width-1-1 uk-button-large uk-box-shadow-medium">DONAR</a> -->
+							        <div class="uk-wodth-1-1">
+							        	<p class="uk-text-right  uk-margin-medium-top">
+							        		<hr>
+							          		<button class="uk-button uk-button-default prevBtn" type="button">Atras</button>
+							          		<button class="uk-button uk-button-primary " type="submit">Donar</button>
+						          		</p>	
+						          	</div>						        
 								</div>
+
 							</form>
+							</div>
 						</div>
 						<div class="uk-width-1-3@m">
 							<h3 class="uk-heading-line uk-text-bold"><span>Participación Empresarial</span></h3>
@@ -180,33 +212,7 @@
 								<a href="#" class="uk-button uk-button-default uk-button-large " type="button" uk-toggle="target: #mas-info">Más info</a>
 							</div>
 
-							<!-- <h4 class="uk-heading-line uk-text-bold"><span>Cuentas para donar</span></h4>
-							<div class="uk-child-width-1-1@s uk-grid-match" uk-grid>
-							    <div>
-							        <div class="uk-card uk-card-hover uk-card-body">
-							            <h3 class="uk-card-title">Hover</h3>
-							            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-							        </div>
-							    </div>
-							    <div>
-							        <div class="uk-card uk-card-default uk-card-hover uk-card-body">
-							            <h3 class="uk-card-title">Default</h3>
-							            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-							        </div>
-							    </div>
-							    <div>
-							        <div class="uk-card uk-card-primary uk-card-hover uk-card-body uk-light">
-							            <h3 class="uk-card-title">Primary</h3>
-							            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-							        </div>
-							    </div>
-							    <div>
-							        <div class="uk-card uk-card-secondary uk-card-hover uk-card-body uk-light">
-							            <h3 class="uk-card-title">Secondary</h3>
-							            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-							        </div>
-							    </div>
-							</div> -->
+
 						</div>
 						<!-- This is the modal -->
 						<div id="mas-info" uk-modal>
@@ -260,26 +266,13 @@
 			<!--/CONTENT-->
 			
 			
-			<!--FOOTER-->
-			<footer class="uk-section uk-section-small uk-section-muted">
-<!-- 				<div class="uk-container">
-					<p class="uk-text-small uk-text-center">Copyright 2018 - <a href="https://github.com/zzseba78/Kick-Off">Created by KickOff</a> | Built with <a href="http://getuikit.com" title="Visit UIkit 3 site" target="_blank" data-uk-tooltip><span data-uk-icon="uikit"></span></a></p>
-				</div> -->
-			</footer>
-			<!--/FOOTER-->
+
 			<!-- OFFCANVAS -->
 			<div id="offcanvas-nav" uk-offcanvas="flip: true; overlay: true">
 				<div class="uk-offcanvas-bar uk-offcanvas-bar-animation uk-offcanvas-slide">
 					<button class="uk-offcanvas-close uk-close" type="button" uk-close></button>
 					<ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
-<!-- 						<li class="uk-active"><a href="#">INICIO</a></li>
-						<li class="uk-parent">
-							<a href="#">Parent</a>
-							<ul class="uk-nav-sub">
-								<li><a href="#">Sub item</a></li>
-								<li><a href="#">Sub item</a></li>
-							</ul>
-						</li> -->
+
 						<li class="uk-nav-header">Menu</li>
 						<li><a href="/"><span class="uk-margin-small-right" uk-icon="icon: home"></span> INICIO</a></li>
 				        <li class="uk-parent">
@@ -309,6 +302,100 @@
 		<!-- JS FILES -->
         <script src="dist/js/uikit.min.js"></script>
         <script src="dist/js/uikit-icons.min.js"></script>
-		
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/jquery.form-validator.js"></script>
+		<script>
+		  $(document).ready(function() { 
+			var $form = $("form"),
+		  	$successMsg = $('.alert').fadeOut(600); 
+			$.validate({
+			  form : '#contactForm',
+			  modules : 'html5',
+			  errorElementClass: 'uk-form-danger',
+			  errorMessageClass: "uk-text-danger",
+			    onSuccess : function($form) {
+			    $successMsg.show();
+			    return true; // stops submitting
+			    }
+			});
+			}); 
+		  $('#cbu').restrictLength( $('#pres-max-length') );
+		</script>
+		<script>
+		    $(document).ready(function() { 
+			$('#contactForm').on('submit', function(e) {
+			    e.preventDefault(); //Prevents default submit
+			    var form = $(this); 
+			    var post_url = form.attr('action'); 
+			    var post_data = form.serialize(); //Serialized the form data for process.php
+			     $('#loader', form).html('<img src="images/loader.gif" /> Mandando...');
+			    $.ajax({
+			        type: 'POST',
+			        url: 'insert.php', // Your form script
+			        data: post_data,
+			        //message: message,
+			        //THIS WILL TELL THE FORM IF THE USER IS CAPTCHA VERIFIED.
+			        //captcha: grecaptcha.getResponse()
+			        success: function() {
+			            $("#contactForm")[0].reset();
+			            $('.alert').fadeOut(600);            
+			        }
+			    });
+			});
+			}); 
+		</script>
+		<script>
+			$(document).ready(function () {
+  var navListItems = $('div.setup-panel div a'),
+          allWells = $('.setup-content'),
+          allNextBtn = $('.nextBtn'),
+  		  allPrevBtn = $('.prevBtn');
+
+  allWells.hide();
+
+  navListItems.click(function (e) {
+      e.preventDefault();
+      var $target = $($(this).attr('href')),
+              $item = $(this);
+
+      if (!$item.hasClass('disabled')) {
+          navListItems.removeClass('uk-button-primary').addClass('uk-button-quinterciary');
+          $item.addClass('uk-button-primary');
+          allWells.hide();
+          $target.show();
+          $target.find('input:eq(0)').focus();
+      }
+  });
+  
+  allPrevBtn.click(function(){
+      var curStep = $(this).closest(".setup-content"),
+          curStepBtn = curStep.attr("id"),
+          prevStepWizard = $('div.setup-panel div a[href="#' + curStepBtn + '"]').parent().prev().children("a");
+
+          prevStepWizard.removeAttr('disabled').trigger('click');
+  });
+
+  allNextBtn.click(function(){
+      var curStep = $(this).closest(".setup-content"),
+          curStepBtn = curStep.attr("id"),
+          nextStepWizard = $('div.setup-panel div a[href="#' + curStepBtn + '"]').parent().next().children("a"),
+          curInputs = curStep.find("input[type='text'],input[type='url']"),
+          isValid = true;
+
+      $(".form-group").removeClass("uk-form-danger");
+      for(var i=0; i<curInputs.length; i++){
+          if (!curInputs[i].validity.valid){
+              isValid = false;
+              $(curInputs[i]).closest(".form-group").addClass("uk-form-danger");
+          }
+      }
+
+      if (isValid)
+          nextStepWizard.removeAttr('disabled').trigger('click');
+  });
+
+  $('div.setup-panel div a.uk-button-primary').trigger('click');
+});
+		</script>
 	</body>
 </html>

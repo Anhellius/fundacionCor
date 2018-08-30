@@ -2,19 +2,19 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<meta name="description" content="Fundaci贸n din fines de lucro para donaciones">
-		<meta name="keywords" content="Fundaci贸n,donar,ni帽os,beneficencia">
-		<meta name="author" content="Fundaci贸n Cor">
+		<meta name="description" content="Fundaci髇 din fines de lucro para donaciones">
+		<meta name="keywords" content="Fundaci髇,donar,ni帽os,beneficencia">
+		<meta name="author" content="Fundaci髇 Cor">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Fundaci贸n Cor</title>
-		<meta property="og:title" content="Fundaci贸n Cor" />
+		<title>Fundaci髇 Cor</title>
+		<meta property="og:title" content="Fundaci髇 Cor" />
 		<meta property="og:type" content="website" />
 		<meta property="og:url" content="https://www.fundacioncor.org.ar" />
-        <meta property="og:description" content="Fundaci贸n Cor, sin fines de lucro" />
+        <meta property="og:description" content="Fundaci髇 Cor, sin fines de lucro" />
 		<meta property="og:image" content="https://www.fundacioncor.org.ar/images/logo.jpg" />
-        <meta name="twitter:card" content="Fundaci贸n Cor, sin fines de lucro" />
-        <meta name="twitter:title" content="Fundaci贸n Cor ">
-        <meta name="twitter:description" content="Fundaci贸n sin fines de lucro">
+        <meta name="twitter:card" content="Fundaci髇 Cor, sin fines de lucro" />
+        <meta name="twitter:title" content="Fundaci髇 Cor ">
+        <meta name="twitter:description" content="Fundaci髇 sin fines de lucro">
         <meta name="twitter:image" content="https://www.fundacioncor.org.ar/images/logo.jpg">
         <meta name="twitter:site" content="@fundacionCor" />
         <meta name="twitter:creator" content="@fundacionCor" />
@@ -24,7 +24,7 @@
 
 
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<link rel="icon" href="images/favicon.ico">
+		<link rel="icon" href="pages/images/favicon.ico">
 		<!-- CSS FILES -->
         <link rel="stylesheet" href="css/site.css" />
 	</head>
@@ -81,13 +81,13 @@
 					                </div>
 					            </li>
 								<li>
-									<a href="donaciones.html" title="Donaciones">Donaciones</a>
+									<a href="donaciones" title="Donaciones">Donaciones</a>
 								</li>
 								<li>
-									<a href="articulos.html" title="Art铆culos">Articulos</a>
+									<a href="articulos" title="Art铆culos">Articulos</a>
 								</li>
 								<li>
-									<a href="contacto.html" title="Contacto">Contacto</a>
+									<a href="contacto" title="Contacto">Contacto</a>
 								</li>
 							</ul>
 						</div>
@@ -140,7 +140,7 @@
 					<div class="uk-width-2-3@l z-contenido ">
 						<div class="uk-flex uk-flex-middle" uk-grid>
 							<div class="uk-width-auto uk-text-center">
-								<h1  style="background-color: #fff;"><span class="size-96">Fundaci贸n Cor</span></h1>
+								<h1  style="background-color: #fff;"><span class="size-96">Fundaci髇 Cor</span></h1>
 								<p>Nosotros podemos ahora para que ellos puedan ma帽ana</p>
 							</div>
 							<div class="uk-width-1-5@m">
@@ -154,7 +154,7 @@
 <!-- 						<div class="uk-overlay uk-overlay-primary uk-position-cover uk-flex uk-flex-center uk-flex-middle uk-light uk-text-center">
 							<div uk-scrollspy="cls: uk-animation-slide-bottom-small">
 								<span style="letter-spacing: 0.2em; font-size: 0.725rem">BIENVENIDOS</span>
-								<h1 class="uk-margin-top uk-margin-small-bottom uk-margin-remove-adjacent">Fundaci贸n Cor</h1>
+								<h1 class="uk-margin-top uk-margin-small-bottom uk-margin-remove-adjacent">Fundaci髇 Cor</h1>
 								<p>Nosotros podemos ahora para que ellos puedan ma帽ana</p>
 								<a href="#" class="uk-button uk-button-default uk-margin-top">DONAR</a>
 							</div>
@@ -170,7 +170,7 @@
     		<div class="">
     			<article class="uk-article">
 				    <h2 class="uk-text-truncate uk-text-primary" uk-slideshow-parallax="y: 900,0,900; opacity: 0,1,0"><a class="uk-link-reset" href="noticia.html">Heading large just to see how does it work the trunkate class</a></h2>
-				    <p class="uk-article-meta"  uk-slideshow-parallax="y: 1000,0,1000; opacity: 0,1,0">Written by <a href="#">Fundaci贸n Cor</a> on 12 April 2012. Posted in <a href="articulos.html">Art铆culos</a></p>
+				    <p class="uk-article-meta"  uk-slideshow-parallax="y: 1000,0,1000; opacity: 0,1,0">Written by <a href="#">Fundaci髇 Cor</a> on 12 April 2012. Posted in <a href="articulos.html">Art铆culos</a></p>
 
 				    <p class="uk-text-lead  uk-visible@m" uk-slideshow-parallax="y: 2000,0,2000; opacity: 0,1,0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
@@ -190,7 +190,7 @@
     		<div class="">
     			<article class="uk-article">
 				    <h2 class="uk-text-truncate uk-text-primary" uk-slideshow-parallax="y: 900,0,900; opacity: 0,1,0"><a class="uk-link-reset" href="noticia.html">Heading large just to see how does it work the trunkate class</a></h2>
-				    <p class="uk-article-meta"  uk-slideshow-parallax="y: 1000,0,1000; opacity: 0,1,0">Written by <a href="#">Fundaci贸n Cor</a> on 12 April 2012. Posted in <a href="articulos.html">Art铆culos</a></p>
+				    <p class="uk-article-meta"  uk-slideshow-parallax="y: 1000,0,1000; opacity: 0,1,0">Written by <a href="#">Fundaci髇 Cor</a> on 12 April 2012. Posted in <a href="articulos.html">Art铆culos</a></p>
 
 				    <p class="uk-text-lead  uk-visible@m" uk-slideshow-parallax="y: 2000,0,2000; opacity: 0,1,0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
@@ -210,7 +210,7 @@
     		<div class="">
     			<article class="uk-article">
 				    <h2 class="uk-text-truncate uk-text-primary" uk-slideshow-parallax="y: 900,0,900; opacity: 0,1,0"><a class="uk-link-reset" href="noticia.html">Heading large just to see how does it work the trunkate class</a></h2>
-				    <p class="uk-article-meta"  uk-slideshow-parallax="y: 1000,0,1000; opacity: 0,1,0">Written by <a href="#">Fundaci贸n Cor</a> on 12 April 2012. Posted in <a href="articulos.html">Art铆culos</a></p>
+				    <p class="uk-article-meta"  uk-slideshow-parallax="y: 1000,0,1000; opacity: 0,1,0">Written by <a href="#">Fundaci髇 Cor</a> on 12 April 2012. Posted in <a href="articulos.html">Art铆culos</a></p>
 
 				    <p class="uk-text-lead  uk-visible@m" uk-slideshow-parallax="y: 2000,0,2000; opacity: 0,1,0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
@@ -280,13 +280,13 @@
 						<div class="uk-tile uk-tile-small uk-tile-muted uk-border-rounded">
 
 							Ayudamos a lograr que todos los ni帽os/as y adolscentes puedan vivir en familia. <br>
-							Quienes conformamos Fundaci贸n Cor: Consejo de administraci贸n voluntarios de distintas 谩reas, llevamos adelante diferentes programas destinados a brindar una mejor calidad de vida, mejor proyecci贸n a futuro; enfocados a quellos ni帽os/as y adolescentes que por distintas circunstancias no tienen posibilidad de que sus derechos sean respetados. <br>
+							Quienes conformamos Fundaci髇 Cor: Consejo de administraci髇 voluntarios de distintas 谩reas, llevamos adelante diferentes programas destinados a brindar una mejor calidad de vida, mejor proyecci髇 a futuro; enfocados a quellos ni帽os/as y adolescentes que por distintas circunstancias no tienen posibilidad de que sus derechos sean respetados. <br>
 							Sabemos que trabajando codo a codo por ellos, con objetivos claros, podemos ayudar a concretar estos sue帽os. Te necesitamos. <br>
 
 							<p>隆VOS Y YO SOMOS NOSOTROS!</p> 
 
 							<p><span class="uk-text-primary">Silvia Valerio de Martinez</span> <br>
-							<strong>Presidente Fundaci贸n Cor</strong></p>
+							<strong>Presidente Fundaci髇 Cor</strong></p>
 						</div> -->
 					</div>
 				</div>
@@ -407,7 +407,7 @@
 				        <li class="uk-parent">
 				            <a href="#"><span class="uk-margin-small-right" uk-icon="icon: users"></span>QUIENES SOMOS</a>
 				            <ul class="uk-nav-sub">
-				                <li><a href="#">Misi贸n</a></li>
+				                <li><a href="#">Misi髇</a></li>
 				                <li><a href="#">Objetivos</a></li>
 				                <li><a href="#">Actividad</a></li>
 				                <li><a href="#">Fundadores y consejo directivo</a></li>
@@ -422,7 +422,7 @@
 						<li class="uk-nav-divider"></li>
 						<li><a href="login.html"><span class="uk-margin-small-right" uk-icon="icon:  sign-in"></span> LOGIN</a></li>
 					</ul>
-					<h3>Fundaci贸n Cor</h3>
+					<h3>Fundaci髇 Cor</h3>
 					<p>隆VOS Y YO SOMOS NOSOTROS!</p>
 					<a href="donaciones.html" class="uk-button uk-button-default uk-margin-top uk-width-1-1">DONAR</a>
 				</div>

@@ -7,10 +7,10 @@
     <session-factory name="cor">
        <property name="hibernate.bytecode.use_reflection_optimizer">false</property>
         
-      <!--  <property name="hibernate.connection.driver_class">com.p6spy.engine.spy.P6SpyDriver</property>  --> 
-       <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>     
+        <property name="hibernate.connection.driver_class">com.p6spy.engine.spy.P6SpyDriver</property> 
+     <!--   <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property> -->      
         <property name="hibernate.connection.password">redes</property>
-        <property name="hibernate.connection.url">jdbc:mysql://localhost/cor</property>
+        <property name="hibernate.connection.url">jdbc:p6spy:mysql://localhost/cor</property>
         <property name="hibernate.connection.username">root</property>  
     <!-- <property name="hibernate.connection.url">jdbc:mysql://mysql29309-bambalinas.mircloud.host/bambalinas</property>
         <property name="hibernate.connection.password">bamba</property>
@@ -26,12 +26,10 @@
         <property name="hibernate.transaction.factory_class">org.hibernate.transaction.JDBCTransactionFactory</property>
         <property name="hibernate.validator.apply_to_ddl">false</property>
         
-	    <mapping class="cor.modelo.dominio.CategoriaListado"/>
-	    <mapping class="cor.modelo.dominio.CategoriaNoticia"/>
-	    <mapping class="cor.modelo.dominio.Clasificado"/>
+	    <mapping class="cor.modelo.dominio.TipoDonacion"/>
 	    <mapping class="cor.modelo.dominio.Noticia"/>
 	    <mapping class="cor.modelo.dominio.Imagen"/>
-	     <mapping class="cor.modelo.dominio.Sponsor"/>
+	     <mapping class="cor.modelo.dominio.Donacion"/>
 	    
 	    
     </session-factory>

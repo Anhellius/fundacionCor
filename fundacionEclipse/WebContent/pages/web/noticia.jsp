@@ -1,14 +1,13 @@
-<%@ include file="/pages/taglibs.jsp" %>
 <!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<meta name="description" content="Fundaci髇 din fines de lucro para donaciones">
-		<meta name="keywords" content="Fundaci髇,donar,ni帽os,beneficencia">
-		<meta name="author" content="Fundaci髇 Cor">
+		<meta name="description" content="Fundaci贸n din fines de lucro para donaciones">
+		<meta name="keywords" content="Fundaci贸n,donar,ni帽os,beneficencia">
+		<meta name="author" content="Fundaci贸n Cor">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Fundaci髇 Cor</title>
-		<meta property="og:title" content="Fundaci髇 Cor" />
+		<title>Fundaci贸n Cor</title>
+		<meta property="og:title" content="Fundaci贸n Cor" />
 		<meta property="og:type" content="website" />
 		<meta property="og:url" content="https://www.fundacioncor.org.ar/images/" />
 		<meta property="og:image" content="https://www.fundacioncor.org.ar/images/logo.jpg" />
@@ -24,29 +23,48 @@
 	<body>
 		<div class="uk-offcanvas-content">
 			<!--HEADER-->
-			<header style="background-color: #fff; border-bottom: 1px solid #f2f2f2" data-uk-sticky="show-on-up: true; animation: uk-animation-slide-top">
-				<div class="uk-container">
-					<nav class="uk-margin-top uk-margin-small-bottom" id="navbar" data-uk-navbar="mode: click;">
-						<div class="uk-navbar-left nav-overlay uk-visible@m">
-							<ul class="uk-navbar-nav">
+			<header id="header" style="background-color: #fff;" uk-sticky="show-on-up: true; animation: uk-animation-fade; media: @l">
+				<div class="uk-container uk-container-expand">
+					<nav class="uk-margin-top uk-margin-small-bottom" id="navbar" uk-navbar="mode: hover;">
+						<div class="uk-navbar-left nav-overlay">
+							<a class="uk-navbar-item uk-logo" href="index.html" title="Logo"><img src="images/logocor1.png" alt="Logo" style="height: 90px; width: 127px"></a>
+							<ul class="uk-navbar-nav uk-visible@m">
+					            <li>
+					                <a href="#">Quienes somos</a>
+					                <div class="uk-navbar-dropdown">
+					                    <ul class="uk-nav uk-navbar-dropdown-nav">
+					                        <li><a href="#">Mision</a></li>
+					                        <!-- <li class="uk-nav-header">Header</li> -->
+					                        <li><a href="#">Objetivos</a></li>
+					                        <li><a href="#">Actividades</a></li>
+					                        <!-- <li class="uk-nav-divider"></li>
+					                        <li><a href="#">Item</a></li> -->
+					                    </ul>
+					                </div>
+					            </li>
 								<li>
-									<a href="#" title="Subscribe">Donar</a>
+									<a href="donaciones.html" title="Donaciones">Donaciones</a>
 								</li>
 								<li>
-									<a href="login.html" title="Sign Up">Login</a>
+									<a href="articulos.html" title="Art铆culos">Articulos</a>
+								</li>
+								<li>
+									<a href="contacto.html" title="Contacto">Contacto</a>
 								</li>
 							</ul>
 						</div>
-						<div class="uk-navbar-center nav-overlay">
-							<a class="uk-navbar-item uk-logo" href="/inicio" title="Logo"><img src="pages/images/logo-2.jpeg" alt="Logo" style="height: 88px"></a>
-						</div>
+						<!-- <div class="uk-navbar-center nav-overlay">
+							
+						</div> -->
 						<div class="uk-navbar-right nav-overlay">
-							<a class="uk-navbar-toggle uk-visible@m" data-uk-search-icon data-uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href="#"></a>
+							<!-- <a class="uk-navbar-item uk-logo" href="index.html" title="Logo"><img src="images/logocor1.png" alt="Logo" style="height: 88px"></a> -->
+							<!-- <a class="uk-navbar-toggle uk-visible@m" uk-search-icon uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href="#"></a> -->
 							<div class="uk-navbar-item">
-								<a class="uk-visible@s" style="margin-right: 4px" href="#" data-uk-icon="facebook"></a>
-								<!-- <a class="uk-visible@s" style="margin-right: 4px" href="#" data-uk-icon="twitter"></a>
-								<a class="uk-visible@s" style="margin-right: 4px" href="#" data-uk-icon="instagram"></a> -->
-								<a class="uk-navbar-toggle uk-hidden@m" data-uk-toggle data-uk-navbar-toggle-icon href="#offcanvas-nav"></a>
+								<a href="" class="uk-icon-button  uk-margin-medium-right" uk-icon="facebook"></a>
+								<!-- <a class="uk-visible@s" style="margin-right: 4px" href="#" uk-icon="twitter"></a>
+								<a class="uk-visible@s" style="margin-right: 4px" href="#" uk-icon="instagram"></a> -->
+								<a class="uk-navbar-toggle uk-hidden@m" uk-toggle uk-navbar-toggle-icon href="#offcanvas-nav"></a>
+								<a href="login.html" class="uk-button uk-button-default uk-visible@m"><span class="">Login</span></a>
 							</div>
 							
 						</div>
@@ -56,14 +74,14 @@
 									<input class="uk-search-input" type="search" placeholder="Buscar...">
 								</form>
 							</div>
-							<a class="uk-navbar-toggle" data-uk-close data-uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href="#"></a>
+							<a class="uk-navbar-toggle" uk-close uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href="#"></a>
 						</div>
 					</nav>
 				</div>
 			</header>
 			<!--/HEADER-->
 						<!-- NAVIGATION -->
-			<div class="uk-container">
+<!-- 			<div class="uk-container">
 				<nav class="nav-scroll">
 					<ul class="uk-subnav uk-flex uk-flex-between uk-flex-nowrap" data-ukmargin>
 						<li class="uk-active"><a href="index.html">Inicio</a></li>
@@ -75,7 +93,7 @@
 						<li><a href="#">Contacto</a></li>
 					</ul>
 				</nav>
-			</div>
+			</div> -->
 			<!-- /NAVIGATION -->
 			<!--AUTHOR-->
 			<section class="uk-section uk-section-small">
@@ -85,8 +103,8 @@
 							<img src="images/logo.jpg" alt="" class="uk-border-circle" style="height: 58px">
 						</div>
 						<div class="uk-width-expand">
-							<h4 class="uk-margin-remove uk-text-bold">Fundaci髇 Cor</h4>
-							<span class="uk-text-small uk-text-muted">Fundaci髇 ben茅fica por los chicos</span>
+							<h4 class="uk-margin-remove uk-text-bold">Fundaci贸n Cor</h4>
+							<span class="uk-text-small uk-text-muted">Fundaci贸n ben茅fica por los chicos</span>
 						</div>
 						<div class="uk-width-auto">
 							<div class="uk-inline">
@@ -116,7 +134,7 @@
 			<section class="uk-section uk-article">
 				<div class="uk-container uk-container-small">
 					<h2 class="uk-text-bold uk-h1 uk-margin-remove-adjacent uk-margin-remove-top">T铆tulo largo para como queda en dos renglones o ven como quedar铆a en m谩s</h2>
-					<p class="uk-article-meta">Escrito el 23 de marzo de 2018. Por <a href="#">Fundaci髇 Cor</a><!--  | <span data-uk-icon="icon: future"></span> Takes 7 min reading. --></p>
+					<p class="uk-article-meta">Escrito el 23 de marzo de 2018. Por <a href="#">Fundaci贸n Cor</a><!--  | <span data-uk-icon="icon: future"></span> Takes 7 min reading. --></p>
 					
 					<p class="uk-text-lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil cupiditate tenetur ad in sapiente deserunt. Rem expedita sit quos minima dignissimos illum, ad, quisquam, ipsa voluptas voluptatum consequatur. Nihil, adipisci.</p>
 					
@@ -237,7 +255,7 @@
 															<img class="uk-border-circle" alt="" width="40" height="40" src="images/logo.jpg">
 														</div>
 														<div class="uk-width-expand">
-															<h6 class="uk-margin-remove-bottom uk-text-bold">Fundaci髇 Cor</h6>
+															<h6 class="uk-margin-remove-bottom uk-text-bold">Fundaci贸n Cor</h6>
 															<p class="uk-text-meta uk-margin-remove-top uk-text-small"><time datetime="2016-04-01T19:00">23 de marzo de 2018</time></p>
 														</div>
 													</div>
@@ -264,7 +282,7 @@
 															<img class="uk-border-circle" alt="" width="40" height="40" src="images/logo.jpg">
 														</div>
 														<div class="uk-width-expand">
-															<h6 class="uk-margin-remove-bottom uk-text-bold">Fundaci髇 Cor</h6>
+															<h6 class="uk-margin-remove-bottom uk-text-bold">Fundaci贸n Cor</h6>
 															<p class="uk-text-meta uk-margin-remove-top uk-text-small"><time datetime="2016-04-01T19:00">23 de marzo de 2018</time></p>
 														</div>
 													</div>
@@ -291,7 +309,7 @@
 															<img class="uk-border-circle" alt="" width="40" height="40" src="images/logo.jpg">
 														</div>
 														<div class="uk-width-expand">
-															<h6 class="uk-margin-remove-bottom uk-text-bold">Fundaci髇 Cor</h6>
+															<h6 class="uk-margin-remove-bottom uk-text-bold">Fundaci贸n Cor</h6>
 															<p class="uk-text-meta uk-margin-remove-top uk-text-small"><time datetime="2016-04-01T19:00">23 de marzo de 2018</time></p>
 														</div>
 													</div>
@@ -318,7 +336,7 @@
 															<img class="uk-border-circle" alt="" width="40" height="40" src="images/logo.jpg">
 														</div>
 														<div class="uk-width-expand">
-															<h6 class="uk-margin-remove-bottom uk-text-bold">Fundaci髇 Cor</h6>
+															<h6 class="uk-margin-remove-bottom uk-text-bold">Fundaci贸n Cor</h6>
 															<p class="uk-text-meta uk-margin-remove-top uk-text-small"><time datetime="2016-04-01T19:00">23 de marzo de 2018</time></p>
 														</div>
 													</div>
@@ -345,7 +363,7 @@
 															<img class="uk-border-circle" alt="" width="40" height="40" src="images/logo.jpg">
 														</div>
 														<div class="uk-width-expand">
-															<h6 class="uk-margin-remove-bottom uk-text-bold">Fundaci髇 Cor</h6>
+															<h6 class="uk-margin-remove-bottom uk-text-bold">Fundaci贸n Cor</h6>
 															<p class="uk-text-meta uk-margin-remove-top uk-text-small"><time datetime="2016-04-01T19:00">23 de marzo de 2018</time></p>
 														</div>
 													</div>
@@ -372,7 +390,7 @@
 															<img class="uk-border-circle" alt="" width="40" height="40" src="images/logo.jpg">
 														</div>
 														<div class="uk-width-expand">
-															<h6 class="uk-margin-remove-bottom uk-text-bold">Fundaci髇 Cor</h6>
+															<h6 class="uk-margin-remove-bottom uk-text-bold">Fundaci贸n Cor</h6>
 															<p class="uk-text-meta uk-margin-remove-top uk-text-small"><time datetime="2016-04-01T19:00">23 de marzo de 2018</time></p>
 														</div>
 													</div>
@@ -399,7 +417,7 @@
 															<img class="uk-border-circle" alt="" width="40" height="40" src="images/logo.jpg">
 														</div>
 														<div class="uk-width-expand">
-															<h6 class="uk-margin-remove-bottom uk-text-bold">Fundaci髇 Cor</h6>
+															<h6 class="uk-margin-remove-bottom uk-text-bold">Fundaci贸n Cor</h6>
 															<p class="uk-text-meta uk-margin-remove-top uk-text-small"><time datetime="2016-04-01T19:00">23 de marzo de 2018</time></p>
 														</div>
 													</div>
@@ -458,10 +476,10 @@
 			<!-- /BOTTOM BAR -->
 			
 			<!-- OFFCANVAS -->
-			<div id="offcanvas-nav" data-uk-offcanvas="flip: true; overlay: true">
+			<div id="offcanvas-nav" uk-offcanvas="flip: true; overlay: true">
 				<div class="uk-offcanvas-bar uk-offcanvas-bar-animation uk-offcanvas-slide">
-					<button class="uk-offcanvas-close uk-close" type="button" data-uk-close></button>
-					<ul class="uk-nav uk-nav-default">
+					<button class="uk-offcanvas-close uk-close" type="button" uk-close></button>
+					<ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
 <!-- 						<li class="uk-active"><a href="#">INICIO</a></li>
 						<li class="uk-parent">
 							<a href="#">Parent</a>
@@ -471,28 +489,34 @@
 							</ul>
 						</li> -->
 						<li class="uk-nav-header">Menu</li>
-						<li><a href="#js-options"><span class="uk-margin-small-right" data-uk-icon="icon: home"></span> INICIO</a></li>
-						<li><a href="#"><span class="uk-margin-small-right" data-uk-icon="icon: thumbnails"></span> MISION</a></li>
-						<li><a href="#"><span class="uk-margin-small-right" data-uk-icon="icon: tag"></span> OBJETIVOS</a></li>
+						<li><a href="/"><span class="uk-margin-small-right" uk-icon="icon: home"></span> INICIO</a></li>
+				        <li class="uk-parent">
+				            <a href="#"><span class="uk-margin-small-right" uk-icon="icon: users"></span>QUIENES SOMOS</a>
+				            <ul class="uk-nav-sub">
+				                <li><a href="#">Misi贸n</a></li>
+				                <li><a href="#">Objetivos</a></li>
+				                <li><a href="#">Actividad</a></li>
+				            </ul>
+				        </li>
 						<li class="uk-nav-divider"></li>
-						<li><a href="#"><span class="uk-margin-small-right" data-uk-icon="icon: calendar"></span> ACTIVIDADES</a></li>
-						<li><a href="#"><span class="uk-margin-small-right" data-uk-icon="icon: calendar"></span> ARTICULOS</a></li>
+						<li><a href="articulos.html"><span class="uk-margin-small-right" uk-icon="icon: calendar"></span> ARTICULOS</a></li>
+						<li><a href="contacto.html"><span class="uk-margin-small-right" uk-icon="icon: happy"></span> CONTACTO</a></li>
+						<!-- <li class="uk-nav-divider"></li>
+						<li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: users"></span> DONACIONES</a></li> -->
+
 						<li class="uk-nav-divider"></li>
-						<li><a href="#"><span class="uk-margin-small-right" data-uk-icon="icon: users"></span> DONACIONES</a></li>
-						<li><a href="#"><span class="uk-margin-small-right" data-uk-icon="icon: happy"></span> CONTACTO</a></li>
-						<li class="uk-nav-divider"></li>
-						<li><a href="login.html"><span class="uk-margin-small-right" data-uk-icon="icon:  sign-in"></span> LOGIN</a></li>
+						<li><a href="login.html"><span class="uk-margin-small-right" uk-icon="icon:  sign-in"></span> LOGIN</a></li>
 					</ul>
-					<h3>Fundaci髇 Cor</h3>
+					<h3>Fundaci贸n Cor</h3>
 					<p>隆VOS Y YO SOMOS NOSOTROS!</p>
-					<a href="#" class="uk-button uk-button-default uk-margin-top uk-width-1-1">DONAR</a>
+					<a href="donaciones.html" class="uk-button uk-button-default uk-margin-top uk-width-1-1">DONAR</a>
 				</div>
 			</div>
 			<!-- /OFFCANVAS -->
 		</div>
 		<!-- JS FILES -->
-        <script src="pages/js/uikit.min.js"></script>
-        <script src="pages/js/uikit-icons.min.js"></script>
+        <script src="dist/js/uikit.min.js"></script>
+        <script src="dist/js/uikit-icons.min.js"></script>
 		
 	</body>
 </html>

@@ -1,12 +1,13 @@
+<%@ include file="/pages/taglibs.jsp" %>
 <!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Fundación Cor - Dashboard</title>
-		<link rel="icon" href="images/favicon.ico">
+		<link rel="icon" href="pages/images/favicon.ico">
 		<!-- CSS FILES -->
-		<link rel="stylesheet" type="text/css" href="css/site.css">
+		<link rel="stylesheet" type="text/css" href="pages/web/css/site.css">
 
 	</head>
 	<body>
@@ -218,11 +219,11 @@
 		</div>
 		
 		<!-- JS FILES -->
-        <script src="dist/js/uikit.min.js"></script>
-        <script src="dist/js/uikit-icons.min.js"></script>
-        <script src="js/jquery-3.3.1.min.js"></script>
-        <script src='js/tinymce/tinymce.min.js'></script>
-         <script src="js/jquery.form-validator.js"></script>
+        <script src="pages/js/uikit.min.js"></script>
+        <script src="pages/js/uikit-icons.min.js"></script>
+        <script src="pages/js/jquery-3.3.1.min.js"></script>
+        <script src='pages/js/tinymce/tinymce.min.js'></script>
+         <script src="pages/js/jquery.form-validator.js"></script>
 		<script>
 		  $(document).ready(function() { 
 			var $form = $("form"),
@@ -250,7 +251,7 @@ tinymce.init({
     plugins: [
       'advlist code link image imagetools preview media table contextmenu paste textpattern'
     ],
-    content_css: 'css/site.css',
+    content_css: 'pages/web/css/site.css',
     toolbar: 'insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image | print preview media fullpage | forecolor backcolor emoticons'
   });
 		</script>

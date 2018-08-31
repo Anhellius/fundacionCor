@@ -1301,11 +1301,11 @@
 		</div>
 		
 		<!-- JS FILES -->
-        <script src="dist/js/uikit.min.js"></script>
-        <script src="dist/js/uikit-icons.min.js"></script>
-        <script src="js/jquery-3.3.1.min.js"></script>
-        <script src="js/jquery.dataTables.min.js"></script>
-        <script src="js/dataTables.uikit.min.js"></script>
+        <script src="pages/js/uikit.min.js"></script>
+        <script src="pages/js/uikit-icons.min.js"></script>
+        <script src="pages/js/jquery-3.3.1.min.js"></script>
+        <script src="pages/js/jquery.dataTables.min.js"></script>
+        <script src="pages/js/dataTables.uikit.min.js"></script>
 		<script>
 $(document).ready(function() {
     $('#example').DataTable( {

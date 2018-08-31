@@ -134,64 +134,19 @@
 					</div>
 					<hr>
 					<div class="uk-grid uk-grid-medium uk-grid-match" data-uk-grid>
-					<div class="uk-width-1-1">
+					<div class="uk-width-1-2">
 						<div class="uk-card uk-card-default uk-card-small uk-card-hover">
 						<div class="uk-card-header">
 							<div class="uk-grid uk-grid-small">
-								<div class="uk-width-auto"><h4 class="uk-margin-remove-bottom">Formulario para crear una noticia nueva</h4></div>
-								<div class="uk-width-expand uk-text-right">
-									<a href="#" class="uk-icon-link uk-margin-small-right" data-uk-icon="icon: move"></a>
-									<a href="#" class="uk-icon-link uk-margin-small-right" data-uk-icon="icon: cog"></a>
-									<a href="#" class="uk-icon-link" data-uk-icon="icon: close"></a>
-								</div>
+								<div class="uk-width-auto"><h4 class="uk-margin-remove-bottom">Formulario para modificar <span class="uk-label uk-label"><strong>MISION</strong></span> </h4></div>
 							</div>
 						</div>
-						<div class="uk-card-body">
-							<div class="uk-overflow-auto" uk-grid>
-								<div class="uk-width-1-2">
-									<form class="uk-form-stacked">
-
-									    <div class="uk-margin">
-									        <label class="uk-form-label" for="form-stacked-text">Título</label>
-									        <div class="uk-form-controls">
-									            <input class="uk-input uk-form-large" id="form-stacked-text" type="text" placeholder="Título de la nota...">
-									        </div>
-									    </div>
-									    <div class="uk-margin">
-									        <label class="uk-form-label" for="form-stacked-text">Copete</label>
-									        <div class="uk-form-controls">
-									            <input class="uk-input uk-form-large" id="form-stacked-text" type="text" placeholder="Copete de la nota...">
-									        </div>
-									    </div>
-
-									    <div class="uk-margin">
-									        <label class="uk-form-label" for="form-stacked-text">Epígrafe</label>
-									        <div class="uk-form-controls">
-									            <input class="uk-input uk-form-large" id="form-stacked-text" type="text" placeholder="Epígrafe de la imágen...">
-									        </div>
-									    </div>									    									    
-
-									    <div class="uk-margin" uk-margin>
-									    	<label class="uk-form-label" for="form-stacked-text">Imágen principal</label>
-									        <div uk-form-custom="target: true">
-									            <input type="file">
-									            <input class="uk-input uk-form-large uk-form-width-large" type="text" placeholder="Seleccione una imagen en .jpg o .jpeg" disabled>
-									        </div>
-									        
-									    </div>
-									    <div class="uk-margin">
-									        <label class="uk-form-label" for="form-stacked-text">Descripción de la imagen</label>
-									        <div class="uk-width-1-1">
-									        	<span class="uk-text-small">(Quedan <span id="pres-max-length">100</span> caracteres)</span>
-									            <input class="uk-input uk-form-large" type="text" name="title"  id="title" placeholder="Descripción breve de lo que se ve en la imágen, hasta 100 caracteres"  data-validation-length="0-100"  data-validation-error-msg='Ingrese una descripción corta'>
-									        </div> 
-									    </div>
-									</form>
-								</div>
-
-								<div class="uk-width-1-2 uk-padding-small uk-padding-remove-top">
-									<label class="uk-form-label" for="form-stacked-text">Texto de la nota</label>
-									<textarea id="myTextarea"></textarea>
+						<div class="uk-card-body" uk-grid>
+							<div class="uk-overflow-auto">
+								
+								<div class="uk-width-1-1 uk-padding-small">
+									<label class="uk-form-label" for="form-stacked-text">Texto que va en MISIÓN</label>
+									<textarea class="myTextarea"></textarea>
 								</div>
 								
 							</div>
@@ -204,7 +159,81 @@
 						</div>
 						</div>
 					</div>
-
+					<div class="uk-width-1-2">
+						<div class="uk-card uk-card-default uk-card-small uk-card-hover">
+						<div class="uk-card-header">
+							<div class="uk-grid uk-grid-small">
+								<div class="uk-width-auto"><h4 class="uk-margin-remove-bottom">Formulario para modificar <strong><span class="uk-label uk-label-success">OBJETIVOS</span></strong></h4></div>
+							</div>
+						</div>
+						<div class="uk-card-body" uk-grid>
+							<div class="uk-overflow-auto">
+								
+								<div class="uk-width-1-1 uk-padding-small">
+									<label class="uk-form-label" for="form-stacked-text">Texto que va en <strong>OBJETIVOS</strong></label>
+									<textarea class="myTextarea"></textarea>
+								</div>
+								
+							</div>
+						</div>
+						<hr>
+						<div class="uk-card-body uk-padding-remove-top uk-text-center">
+							<p class="">
+							    <button class="uk-button uk-button-primary">guardar</button>
+							</p>
+						</div>
+						</div>
+					</div>
+					<div class="uk-width-1-2">
+						<div class="uk-card uk-card-default uk-card-small uk-card-hover">
+						<div class="uk-card-header">
+							<div class="uk-grid uk-grid-small">
+								<div class="uk-width-auto"><h4 class="uk-margin-remove-bottom">Formulario para modificar <strong><span class="uk-label uk-label-warning">ACTIVIDADES</span></strong></h4></div>
+							</div>
+						</div>
+						<div class="uk-card-body" uk-grid>
+							<div class="uk-overflow-auto">
+								
+								<div class="uk-width-1-1 uk-padding-small">
+									<label class="uk-form-label" for="form-stacked-text">Texto que va en <strong>ACTIVIDADES</strong></label>
+									<textarea class="myTextarea"></textarea>
+								</div>
+								
+							</div>
+						</div>
+						<hr>
+						<div class="uk-card-body uk-padding-remove-top uk-text-center">
+							<p class="">
+							    <button class="uk-button uk-button-primary">guardar</button>
+							</p>
+						</div>
+						</div>
+					</div>
+					<div class="uk-width-1-2">
+						<div class="uk-card uk-card-default uk-card-small uk-card-hover">
+						<div class="uk-card-header">
+							<div class="uk-grid uk-grid-small">
+								<div class="uk-width-auto"><h4 class="uk-margin-remove-bottom">Formulario para modificar <strong><span class="uk-label uk-label-danger">FUNDADORES Y CONSEJO DIRECTIVO</span></strong></h4></div>
+							</div>
+						</div>
+						<div class="uk-card-body" uk-grid>
+							<div class="uk-overflow-auto">
+								
+								<div class="uk-width-1-1 uk-padding-small">
+									<label class="uk-form-label" for="form-stacked-text">Texto que va en <strong>FUNDADORES Y CONSEJO DIRECTIVO</strong></label>
+									<textarea class="myTextarea"></textarea>
+								</div>
+								
+							</div>
+						</div>
+						<hr>
+						<div class="uk-card-body uk-padding-remove-top uk-text-center">
+							<p class="">
+							    <button class="uk-button uk-button-primary">guardar</button>
+							</p>
+						</div>
+						</div>
+					</div>					
 					</div>
 				</div>
 				<br>
@@ -262,10 +291,10 @@
 		</script>
 		<script>
 tinymce.init({
-    selector: '#myTextarea',
+    selector: '.myTextarea',
     language: 'es',
     theme: 'modern',
-	min_height: 400,
+	min_height: 300,
 	menubar: 'format table edit',
     plugins: [
       'advlist code link image imagetools preview media table contextmenu paste textpattern'

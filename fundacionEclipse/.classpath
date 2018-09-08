@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jre 1.8">
+		<attributes>
+			<attribute name="owner.project.facets" value="java"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jst.server.core.container/org.eclipse.jst.server.tomcat.runtimeTarget/Apache Tomcat v7.0">
+		<attributes>
+			<attribute name="owner.project.facets" value="jst.web"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="lib" path="C:/Users/Nico/Desktop/Programacion/lib para agregar/antlr-2.7.7.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Nico/Desktop/Programacion/lib para agregar/c3p0-0.9.5.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Nico/Desktop/Programacion/lib para agregar/c3p0-oracle-thin-extras-0.9.5.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Nico/Desktop/Programacion/lib para agregar/commons-collections-3.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Nico/Desktop/Programacion/lib para agregar/commons-io-2.6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Nico/Desktop/Programacion/lib para agregar/commons-logging.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Nico/Desktop/Programacion/lib para agregar/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Nico/Desktop/Programacion/lib para agregar/gson-2.2.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Nico/Desktop/Programacion/lib para agregar/hibernate-c3p0-4.3.7.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Nico/Desktop/Programacion/lib para agregar/hibernate-commons-annotations-4.0.5.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Nico/Desktop/Programacion/lib para agregar/hibernate-core-4.3.7.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Nico/Desktop/Programacion/lib para agregar/hibernate-jpa-2.1-api-1.0.0.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Nico/Desktop/Programacion/lib para agregar/jandex-1.1.0.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Nico/Desktop/Programacion/lib para agregar/javassist-3.18.1-GA.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Nico/Desktop/Programacion/lib para agregar/javax.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Nico/Desktop/Programacion/lib para agregar/jboss-logging-3.1.3.GA.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Nico/Desktop/Programacion/lib para agregar/jboss-logging-annotations-1.2.0.Beta1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Nico/Desktop/Programacion/lib para agregar/jboss-transaction-api_1.2_spec-1.0.0.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Nico/Desktop/Programacion/lib para agregar/joda-time-2.9.7.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Nico/Desktop/Programacion/lib para agregar/json-simple-1.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Nico/Desktop/Programacion/lib para agregar/jstl.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Nico/Desktop/Programacion/lib para agregar/log4j-1.2.17.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Nico/Desktop/Programacion/lib para agregar/log4j-1.2-api-2.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Nico/Desktop/Programacion/lib para agregar/log4j-api-2.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Nico/Desktop/Programacion/lib para agregar/log4j-core-2.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Nico/Desktop/Programacion/lib para agregar/log4j-slf4j-impl-2.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Nico/Desktop/Programacion/lib para agregar/log4j-web-2.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Nico/Desktop/Programacion/lib para agregar/mail-1.5.0-b01.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Nico/Desktop/Programacion/lib para agregar/mchange-commons-java-0.2.11.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Nico/Desktop/Programacion/lib para agregar/p6spy-2.1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Nico/Desktop/Programacion/lib para agregar/poi-3.10.1-20140818.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Nico/Desktop/Programacion/lib para agregar/sirhi.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Nico/Desktop/Programacion/lib para agregar/slf4j-api-1.7.7.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Nico/Desktop/Programacion/lib para agregar/standard.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Nico/Desktop/Programacion/lib para agregar/stripes.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Nico/Desktop/Programacion/lib para agregar/stripesstuff-0.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Nico/Desktop/Programacion/lib para agregar/mysql-connector-java-5.1.47-bin.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Nico/Desktop/Programacion/lib para agregar/commons-fileupload-1.3.3.jar"/>
+	<classpathentry kind="output" path="build/classes"/>
+</classpath>

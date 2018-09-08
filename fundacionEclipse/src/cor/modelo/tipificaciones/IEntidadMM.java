@@ -1,1 +1,0 @@
-package cor.modelo.tipificaciones;
